@@ -35,6 +35,8 @@
   
 >> https://docs.aws.amazon.com/ja_jp/cdk/latest/guide/about_examples.html  
   
+*Special* : https://docs.aws.amazon.com/cdk/api/latest/python/index.html  
+  
 https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html  
   
 https://aws.amazon.com/jp/tools/  
