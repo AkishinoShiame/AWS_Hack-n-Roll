@@ -10,3 +10,6 @@
 [submodule "aws-cdk"]
 	path = aws-cdk
 	url = https://github.com/aws/aws-cdk.git
+[submodule "troposphere"]
+	path = troposphere
+	url = https://github.com/cloudtools/troposphere.git
