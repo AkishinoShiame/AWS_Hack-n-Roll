@@ -1,5 +1,7 @@
-# AWS CDK + AWS CloudFormation
-
+# [WorkShop-1] AWS CDK + AWS CloudFormation
+  
+## AWS CDK  
+  
 ```bash
 ~ $ tree
 .
@@ -22,6 +24,14 @@
 │   └── workshop.pdf
 └── tsconfig.json
 ```
+
+> CDK uses above structure to look inside the define of "stacks" and knows how to build the structures and apps.  
+>  
+> CDK define APPS in cdk.js, call inside bin/app.ts  
+>  
+>> Inside bin/app.ts, it define the enviorment variables.  
+>>  
+>> <Stack>.ts will be define inside lib/stacks/<name>.ts, tells what infra stacks should be create.  
   
 ## Git Clone Content(Sub Module)  
   
@@ -33,32 +43,35 @@
 | aws-shell @ 8950f03 | [WorkShop-1 Related] AWS Shell bash tools |  
 | troposphere @ 7f2aedd | [WorkShop-1 Related] A useful tool that a Python library to create AWS CloudFormation descriptions |  
   
->> CDK uses above structure to look inside the define of "stacks" and knows how to build the structures and apps.  
->>  
->> CDK define APPS in cdk.js, call inside bin/app.ts  
->>  
->> Inside bin/app.ts, it define the enviorment variables.  
->>  
->> <Stack>.ts will be define inside lib/stacks/<name>.ts, tells what infra stacks should be create.  
+## CDK Template  
   
-*Clone Template to "Template" Folder*  
+**Clone Template to "Template" Folder**  
   
->> https://docs.aws.amazon.com/ja_jp/cdk/latest/guide/about_examples.html  
+> https://docs.aws.amazon.com/ja_jp/cdk/latest/guide/about_examples.html  
+>> https://docs.aws.amazon.com/en_pv/cdk/latest/guide/about_examples.html  
   
-> https://docs.aws.amazon.com/en_pv/cdk/latest/guide/about_examples.html  
+*Special* **CDK Python API** : https://docs.aws.amazon.com/cdk/api/latest/python/index.html  
   
-*Special* : https://docs.aws.amazon.com/cdk/api/latest/python/index.html  
+Explane Coding languages supports status: 
   
-https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html  
+> https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html  
+>> https://docs.aws.amazon.com/cdk/latest/guide/reference.html#aws_construct_lib_versioning_binding
   
-https://aws.amazon.com/jp/tools/  
+**AWS Tools** : https://aws.amazon.com/jp/tools/  
   
-https://docs.aws.amazon.com/cdk/latest/guide/use_cfn_template.html  
+Chapter of "Use an Existing AWS CloudFormation Template" *(Currently Suggest!!)* : https://docs.aws.amazon.com/cdk/latest/guide/use_cfn_template.html  
   
-## AWS CDK Examples<a name="about_examples"></a>
+## AWS CDK Examples
 
-The [CDK Examples](https://github.com/aws-samples/aws-cdk-examples) repo on GitHub includes the following examples\.
-
+The one listed belows inside "Template/" is [CDK Examples](https://github.com/aws-samples/aws-cdk-examples) cloned repo from GitHub includes the following examples\.
+  
+> Template/java  
+> Template/python  
+> Template/typescript  
+>> Template/java/*  
+>> Template/python/*  
+>> Template/typescript/*  
+  
 ### TypeScript examples<a name="typescript-examples"></a>
 
 
