@@ -27,7 +27,8 @@
   
 | Sub-Module Repositories | Description |  
 | --- | --- |  
-| aws-cdk @ af56996 | [WorkShop-1 Related] AWS *C*loud *D*evelopment *K*it - Still only fully support TypeScript, like shit. Check [Prove](https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html#multiple_languages) |  
+| Local-With-CloudFormation @ f16d82d | [WorkShop-1 Related] Instructure Provides Easy Examples of CDK-with-onCloud-CloudFormation |  
+| aws-cdk @ af56996 | [WorkShop-1 Related] AWS **C**loud **D**evelopment **K**it - Still only fully support TypeScript, like shit. Check [Prove](https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html#multiple_languages) |  
 | aws-cli @ 5596ec2 | [WorkShop-1 Related] AWS Command line tools |  
 | aws-shell @ 8950f03 | [WorkShop-1 Related] AWS Shell bash tools |  
 | troposphere @ 7f2aedd | [WorkShop-1 Related] A useful tool that a Python library to create AWS CloudFormation descriptions |  
