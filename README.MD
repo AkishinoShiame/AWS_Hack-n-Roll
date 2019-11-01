@@ -27,10 +27,10 @@
   
 | Sub-Module Repositories | Description |  
 | --- | --- |  
-| aws-cdk @ af56996 | AWS *C*loud *D*evelopment *K*it - Still only fully support TypeScript, like shit. Check [Prove](https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html#multiple_languages) |  
-| aws-cli @ 5596ec2 | AWS Command line tools |  
-| aws-shell @ 8950f03 | AWS Shell bash tools |  
-|  |  |  
+| aws-cdk @ af56996 | [WorkShop-1 Related] AWS *C*loud *D*evelopment *K*it - Still only fully support TypeScript, like shit. Check [Prove](https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html#multiple_languages) |  
+| aws-cli @ 5596ec2 | [WorkShop-1 Related] AWS Command line tools |  
+| aws-shell @ 8950f03 | [WorkShop-1 Related] AWS Shell bash tools |  
+| troposphere @ 7f2aedd | [WorkShop-1 Related] A useful tool that a Python library to create AWS CloudFormation descriptions |  
   
 >> CDK uses above structure to look inside the define of "stacks" and knows how to build the structures and apps.  
 >>  
