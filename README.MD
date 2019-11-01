@@ -130,3 +130,19 @@ The one listed belows inside "Template/" is [CDK Examples](https://github.com/aw
 | Example | Description | 
 | --- |--- |
 | [aws\-cdk\-changelogs\-demo](https://github.com/aws-samples/aws-cdk-changelogs-demo) | A full serverless Node\.js application stack deployed using CDK\. It uses AWS Lambda, AWS Fargate, DynamoDB, Elasticache, S3, and CloudFront\. | 
+  
+  
+  
+## Installation & Setup steps  
+  
+#### Enviorment Needed  
+* [Node.js ≥ 10.3.0](https://nodejs.org/download/release/latest-v10.x/)  
+* [NPM](https://www.npmjs.com/)  
+* [NVM](https://github.com/nvm-sh/nvm)  
+* [Docker(Optional)](https://www.docker.com/products/docker-desktop)  
+* [K8S(Extended)](https://kubernetes.io/)  
+  
+#### Installation  
+* Install above requires packages  
+* AWS CDK CLI Install  
+> `$ npm i -g aws-cdk`  
