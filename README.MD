@@ -35,6 +35,11 @@
   
 >> https://docs.aws.amazon.com/ja_jp/cdk/latest/guide/about_examples.html  
   
+https://docs.aws.amazon.com/cdk/latest/guide/multiple_languages.html  
+  
+https://aws.amazon.com/jp/tools/  
+  
+https://docs.aws.amazon.com/cdk/latest/guide/use_cfn_template.html  
   
 ## AWS CDK Examples<a name="about_examples"></a>
 
