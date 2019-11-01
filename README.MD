@@ -145,4 +145,27 @@ The one listed belows inside "Template/" is [CDK Examples](https://github.com/aw
 #### Installation  
 * Install above requires packages  
 * AWS CDK CLI Install  
-> `$ npm i -g aws-cdk`  
+Command: `$ npm i -g aws-cdk`  
+* Setup CDK CLI Token as belows  
+ * create [AWS Account](https://portal.aws.amazon.com/billing/signup).  
+ * Goes to [AWS IAM](https://console.aws.amazon.com/iam/) page.  
+ * Create IAM user with corrisponding rights(Admin) and download **.CSV of Token**  
+* Type belows information and type corrisponding below informations.   
+```bash
+[TestEnviormentHost:~ testuser$ aws configure
+AWS Access Key ID []: <Type-your-Access-Key-ID-here-TIHH>
+AWS Secret Access Key[]: <Type-your-Secret-Access-here-qhMb>
+Default region name []: ap-northeast-1
+Default output format []: text
+```
+[Mark]: the region name can be found in [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) please use the shortest location near you.
+* Last part to build project:  
+```bash
+$ cd <to-your-project-location>
+$ npm install typescript
+$ << Edit your stack/codes/files >>
+$ cdk bootstrap  # bootstrap from local to cloud.
+$ cdk deploy <stack>  # assign a stack to deploy to AWS.
+$ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage must be empty!*
+```
+**Currently suggest building CDK with typescript code(If you knows), or using CloudFormation Template with CDK to build your project** (´っ･ω･)っ  
