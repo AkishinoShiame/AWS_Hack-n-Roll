@@ -1,0 +1,27 @@
+{
+  "name": "resource-overrides",
+  "version": "1.0.0",
+  "description": "Shows how to access the CloudFormation layer",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com",
+    "organization": true
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^10.17.0",
+    "typescript": "~3.6.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-autoscaling": "*",
+    "@aws-cdk/aws-ec2": "*",
+    "@aws-cdk/aws-s3": "*",
+    "@aws-cdk/core": "*"
+  }
+}

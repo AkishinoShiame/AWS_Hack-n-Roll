@@ -1,0 +1,26 @@
+{
+  "name": "stepfunctions-job-poller",
+  "version": "1.0.0",
+  "description": "A simple StepFunctions demo",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "author": {
+    "name": "Amazon Web Services",
+    "url": "https://aws.amazon.com",
+    "organization": true
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^10.17.0",
+    "typescript": "~3.6.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-stepfunctions": "*",
+    "@aws-cdk/aws-stepfunctions-tasks": "*",
+    "@aws-cdk/core": "*"
+  }
+}

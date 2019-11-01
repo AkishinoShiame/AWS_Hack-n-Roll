@@ -30,3 +30,7 @@
 >> Inside bin/app.ts, it define the enviorment variables.  
 >>  
 >> <Stack>.ts will be define inside lib/stacks/<name>.ts, tells what infra stacks should be create.  
+  
+*Clone Template to "Template" Folder*  
+  
+>> https://docs.aws.amazon.com/ja_jp/cdk/latest/guide/about_examples.html  
