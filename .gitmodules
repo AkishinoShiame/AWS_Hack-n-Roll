@@ -1,0 +1,12 @@
+[submodule "Local-With-CloudFormation"]
+	path = Local-With-CloudFormation
+	url = https://github.com/clifflu/ug-workshop-2019.git
+[submodule "aws-cli"]
+	path = aws-cli
+	url = https://github.com/aws/aws-cli.git
+[submodule "aws-shell"]
+	path = aws-shell
+	url = https://github.com/awslabs/aws-shell.git
+[submodule "aws-cdk"]
+	path = aws-cdk
+	url = https://github.com/aws/aws-cdk.git
