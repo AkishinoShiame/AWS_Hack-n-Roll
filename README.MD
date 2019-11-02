@@ -220,5 +220,6 @@ Execute the concept from above Layout.
   
 ![CoffeeShopConcept](https://i.imgur.com/eVV6Vfz.jpg)
 ![CoffeeMapFull](https://imgur.com/c2kNMNp)
+![CoffeeMapExtand](https://imgur.com/juvgcb0)
 
 &copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  
