@@ -222,5 +222,6 @@ Execute the concept from above Layout.
 ![CoffeeMapFull](https://imgur.com/c2kNMNp)
 ![CoffeeMapExtand](https://imgur.com/juvgcb0)
 ![CoffeeMapMarkAPI](https://imgur.com/N1hnD6a)
+![CoffeeMap3Party](https://imgur.com/OHrikCB)
 
 &copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  
