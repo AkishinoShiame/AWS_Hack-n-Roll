@@ -213,4 +213,6 @@ Event Storming Process => Action | Event => Think About => Final Module.
   
 ![OpenFreePay](https://i.imgur.com/CGG5Dqc.png)  
   
+* Case Study - Open Coff'ee Shop  
+  
 &copy; CopyWrite by Shiame, Krace, MacT and Kevin. All Rights reserved.  
