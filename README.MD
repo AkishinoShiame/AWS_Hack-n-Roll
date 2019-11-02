@@ -188,4 +188,11 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 * Try to Learn and Speak with same language.  
 > Event Storming.
   
+#### Domain Gathering TOOL  
+  
+* Sliding Time-line to specific Event.  
+* Brain Storming and Create Idea/ Think more wider.  
+* Create concept from currently exist.  
+* Think more to coverage the possibiity.  
+  
   
