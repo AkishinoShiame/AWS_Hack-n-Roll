@@ -180,3 +180,12 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 <h3>Respect the god (Experiencer) [Domain Knowledger]. </h3>  
   
 #### Domain Gathering  
+  
+* Needs Different Domain Knowledger Join.  
+* Communication is Importent.  
+* Respect the GODs.  
+* Try to check from other side (EX: UE/UI/UX).  
+* Try to Learn and Speak with same language.  
+> Event Storming.
+  
+  
