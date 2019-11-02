@@ -252,6 +252,9 @@ Bind and Bound out the bordering / Mark down the Limition:
 > TopView
 ![TopView](https://imgur.com/WAhUGdj)  
   
+> FinalPrototype
+![FinalPrototype](https://imgur.com/NjiyhDV)
+  
 * ANTICORRUPTION LAYER
  * Define a "GOOGLE Translator"-like API to check 3-Party API schema.
   
