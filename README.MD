@@ -172,5 +172,9 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
   
   
 # [WorkShop-2] Domain Driven Design
+
+| STRATEGY | TATICAL |   
+| --- | --- |  
+| The Concepts / Structure Create / Design | The actual method: EX; language select / actual doing |  
   
-   
+  
