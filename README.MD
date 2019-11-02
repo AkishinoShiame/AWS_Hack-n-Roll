@@ -235,5 +235,6 @@ Bind and Bound out the bordering / Mark down the Limition:
   
 * Boundering to Domain and call Domain Knowledger to join and make thing perfect.  
 * Calling Sub-Domain Knowledger to make perfect. (EX. Packaging to 3-Party finished the system.)
+* Split out the Core / Inner / Outer On System.
   
 &copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  
