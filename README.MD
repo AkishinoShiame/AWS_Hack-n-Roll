@@ -212,3 +212,5 @@ Event Storming Process => Action | Event => Think About => Final Module.
 ### *BrainStorming & Idea  
   
 ![OpenFreePay](https://i.imgur.com/CGG5Dqc.png)  
+  
+&copy; CopyWrite by Shiame, Krace, MacT and Kevin. All Rights reserved.  
