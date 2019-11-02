@@ -230,29 +230,29 @@ Execute the concept from above Layout.
   
 > CoffeeMapFull
   
-![CoffeeMapFull](https://imgur.com/c2kNMNp)
+![CoffeeMapFull](https://imgur.com/c2kNMNp.jpg)
   
 > CoffeeMapExtand
   
-![CoffeeMapExtand](https://imgur.com/juvgcb0)
+![CoffeeMapExtand](https://imgur.com/juvgcb0.jpg)
   
 > CoffeeMapMarkAPI
   
-![CoffeeMapMarkAPI](https://imgur.com/N1hnD6a)
+![CoffeeMapMarkAPI](https://imgur.com/N1hnD6a.jpg)
   
 > CoffeeMap3Party
   
-![CoffeeMap3Party](https://imgur.com/OHrikCB)
+![CoffeeMap3Party](https://imgur.com/OHrikCB.jpg)
   
 > CoffeeMapAPIDefine
   
-![CoffeeMapAPIDefine](https://imgur.com/pIE494A)
+![CoffeeMapAPIDefine](https://imgur.com/pIE494A.jpg)
   
 ### Bounded CONTEXT  
   
 Bind and Bound out the bordering / Mark down the Limition:  
   
-![CoffeeMapMarkSystem](https://imgur.com/0YCr9pE)
+![CoffeeMapMarkSystem](https://imgur.com/0YCr9pE.jpg)
   
 ### Finalization on DDD  
   
@@ -262,11 +262,11 @@ Bind and Bound out the bordering / Mark down the Limition:
   
 > TopView
   
-![TopView](https://imgur.com/WAhUGdj)  
+![TopView](https://imgur.com/WAhUGdj.jpg)  
   
 > FinalPrototype
   
-![FinalPrototype](https://imgur.com/NjiyhDV)
+![FinalPrototype](https://imgur.com/NjiyhDV.jpg)
   
 * ANTICORRUPTION LAYER
  * Define a "GOOGLE Translator"-like API to check 3-Party API schema.
