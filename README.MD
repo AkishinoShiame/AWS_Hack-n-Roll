@@ -216,4 +216,4 @@ Event Storming Process => Action | Event => Think About => Final Module.
   
 * Case Study - Open Coff'ee Shop  
   
-&copy; CopyWrite on this project by Shiame. All Rights reserved.  
+&copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  
