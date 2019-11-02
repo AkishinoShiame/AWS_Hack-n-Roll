@@ -177,4 +177,6 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 | --- | --- |  
 | The Concepts / Structure Create / Design | The actual method: EX; language select / actual doing |  
   
+<h3>Respect the god (Experiencer) [Domain Knowledger]. </h3>  
   
+#### Domain Gathering  
