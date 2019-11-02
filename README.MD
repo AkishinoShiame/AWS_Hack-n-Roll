@@ -169,3 +169,8 @@ $ cdk deploy <stack>  # assign a stack to deploy to AWS.
 $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage must be empty!*
 ```
 **Currently suggest building CDK with typescript code(If you knows), or using CloudFormation Template with CDK to build your project** (´っ･ω･)っ  
+  
+  
+# [WorkShop-2] Domain Driven Design
+  
+   
