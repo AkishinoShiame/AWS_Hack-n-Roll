@@ -225,16 +225,27 @@ Event Storming Process => Action | Event => Think About => Final Module.
 Execute the concept from above Layout.  
   
 > CoffeeShopConcept
+  
 ![CoffeeShopConcept](https://i.imgur.com/eVV6Vfz.jpg)
+  
 > CoffeeMapFull
+  
 ![CoffeeMapFull](https://imgur.com/c2kNMNp)
+  
 > CoffeeMapExtand
+  
 ![CoffeeMapExtand](https://imgur.com/juvgcb0)
+  
 > CoffeeMapMarkAPI
+  
 ![CoffeeMapMarkAPI](https://imgur.com/N1hnD6a)
+  
 > CoffeeMap3Party
+  
 ![CoffeeMap3Party](https://imgur.com/OHrikCB)
+  
 > CoffeeMapAPIDefine
+  
 ![CoffeeMapAPIDefine](https://imgur.com/pIE494A)
   
 ### Bounded CONTEXT  
@@ -250,9 +261,11 @@ Bind and Bound out the bordering / Mark down the Limition:
 * Split out the Core / Inner / Outer On System.
   
 > TopView
+  
 ![TopView](https://imgur.com/WAhUGdj)  
   
 > FinalPrototype
+  
 ![FinalPrototype](https://imgur.com/NjiyhDV)
   
 * ANTICORRUPTION LAYER
