@@ -191,8 +191,9 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 > Event Storming.
   
 * Sliding Time-line to specific Event.  
-* Brain Storming and Create Idea/ Think more wider.  
+* Brain Storming and Create Idea / Think more wider.  
 * Create concept from currently exist.  
 * Think more to coverage the possibiity.  
+> Auto Scaling your Concept/Event/Idea.  
   
   
