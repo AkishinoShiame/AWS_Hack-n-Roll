@@ -199,13 +199,13 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 Event Storming Process => Action | Event => Think About => Final Module.  
   
 | Different Layout |  
-[Concept Wall](https://i.imgur.com/7BfyA47.jpg)
-[Imgur1](https://i.imgur.com/uDfXntp.jpg)
-[Imgur2](https://i.imgur.com/s7EwLUG.jpg)
-[Imgur3](https://i.imgur.com/L8hGIw2.jpg)
-[Imgur4](https://i.imgur.com/ZCitSCo.jpg)
-[Imgur5](https://i.imgur.com/RI6VVoF.jpg)
-[Imgur6](https://i.imgur.com/BJHYPfq.jpg)
-[Imgur7](https://i.imgur.com/rW6df71.jpg)
-[Imgur8](https://i.imgur.com/UJ7yNOt.jpg)
+![Concept Wall](https://i.imgur.com/7BfyA47.jpg)
+![Imgur1](https://i.imgur.com/uDfXntp.jpg)
+![Imgur2](https://i.imgur.com/s7EwLUG.jpg)
+![Imgur3](https://i.imgur.com/L8hGIw2.jpg)
+![Imgur4](https://i.imgur.com/ZCitSCo.jpg)
+![Imgur5](https://i.imgur.com/RI6VVoF.jpg)
+![Imgur6](https://i.imgur.com/BJHYPfq.jpg)
+![Imgur7](https://i.imgur.com/rW6df71.jpg)
+![Imgur8](https://i.imgur.com/UJ7yNOt.jpg)
   
