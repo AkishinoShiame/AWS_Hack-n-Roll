@@ -212,7 +212,8 @@ Event Storming Process => Action | Event => Think About => Final Module.
 ### *BrainStorming & Idea  
   
 ![OpenFreePay](https://i.imgur.com/CGG5Dqc.png)  
+> OpenFreePay &copy; CopyWrite by Shiame, Krace, MacT and Kevin. All Rights reserved.    
   
 * Case Study - Open Coff'ee Shop  
   
-&copy; CopyWrite by Shiame, Krace, MacT and Kevin. All Rights reserved.  
+&copy; CopyWrite on this project by Shiame. All Rights reserved.  
