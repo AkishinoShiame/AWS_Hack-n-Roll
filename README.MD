@@ -186,9 +186,9 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 * Respect the GODs.  
 * Try to check from other side (EX: UE/UI/UX).  
 * Try to Learn and Speak with same language.  
-> Event Storming.
   
 #### Domain Gathering TOOL  
+> Event Storming.
   
 * Sliding Time-line to specific Event.  
 * Brain Storming and Create Idea/ Think more wider.  
