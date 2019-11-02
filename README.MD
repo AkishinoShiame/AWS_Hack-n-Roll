@@ -224,5 +224,9 @@ Execute the concept from above Layout.
 ![CoffeeMapMarkAPI](https://imgur.com/N1hnD6a)
 ![CoffeeMap3Party](https://imgur.com/OHrikCB)
 ![CoffeeMapAPIDefine](https://imgur.com/pIE494A)
-
+  
+### Bounded CONTEXT  
+  
+Bind and Bound out the bordering / Mark down the Limition:  
+  
 &copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  
