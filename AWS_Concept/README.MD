@@ -31,7 +31,7 @@
   
 > [已註冊會員新增綁定其他第三方平台支付帳戶] 使用已註冊會員登入本系統 -> 進入綁定第三方平台支付帳戶頁面 -> 綁定第三方平台支付帳戶 -> 確認成功綁定與否 -> 完成第三方平台支付帳戶綁定  
   
-* payment整合的Event:  
+* Payment整合的Event:  
   
 > [第三方平台點數互相轉換] 使用已註冊會員登入本系統 -> 選擇已綁定之第三方平台作為轉換來源點數 -> 選擇已綁定之第三方平台作為轉換目標點數 -> 進行第三方平台之間點數轉換處理 -> 點數轉換成功與否通知  
   
@@ -43,6 +43,6 @@
   
 # Rough MAP
   
-![OpenFreePayRoughMAP](https://imgur.com/lzyBEM4)  
+![OpenFreePayRoughMAP](https://imgur.com/lzyBEM4.png)  
   
 # DDDing  
