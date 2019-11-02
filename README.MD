@@ -196,4 +196,4 @@ $ cdk destroy  # clean up if you want to destroy the deployment. *Note: storage 
 * Think more to coverage the possibiity.  
 > Auto Scaling your Concept/Event/Idea.  
   
-  
+Event Storming Process => Action | Event => Think About => Final Module.  
