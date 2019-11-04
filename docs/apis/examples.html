@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>examples package &mdash; troposphere 2.4.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/troposphere_favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="troposphere" href="troposphere_toc.html" />
+    <link rel="prev" title="examples" href="examples_toc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/troposphere_logo_small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="examples_toc.html">examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">examples package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-apigateway-module">examples.ApiGateway module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-applicationautoscalingsample-module">examples.ApplicationAutoScalingSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-applicationelb-module">examples.ApplicationELB module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-autoscaling-module">examples.Autoscaling module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-autoscalinghttprequests-module">examples.AutoscalingHTTPRequests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-batch-module">examples.Batch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-certificatemanagersample-module">examples.CertificateManagerSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-classextensions-module">examples.ClassExtensions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-cloudformation-init-configset-module">examples.CloudFormation_Init_ConfigSet module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-cloudfront-distribution-s3-module">examples.CloudFront_Distribution_S3 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-cloudfront-streamingdistribution-s3-module">examples.CloudFront_StreamingDistribution_S3 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-cloudtrail-module">examples.CloudTrail module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-cloudwatcheventssample-module">examples.CloudWatchEventsSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-codebuild-module">examples.CodeBuild module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-codedeploy-module">examples.CodeDeploy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-codepipeline-module">examples.CodePipeline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-customresource-module">examples.CustomResource module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-dlm-module">examples.Dlm module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-dynamodb-table-module">examples.DynamoDB_Table module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-dynamodb-table-with-gsi-and-nonkeyattributes-projection-module">examples.DynamoDB_Table_With_GSI_And_NonKeyAttributes_Projection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-dynamodb-table-with-globalsecondaryindex-module">examples.DynamoDB_Table_With_GlobalSecondaryIndex module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-dynamodb-tables-ondemand-module">examples.DynamoDB_Tables_OnDemand module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ec2conditions-module">examples.EC2Conditions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ec2instancesample-module">examples.EC2InstanceSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ec2-remove-ephemeral-drive-module">examples.EC2_Remove_Ephemeral_Drive module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ecrsample-module">examples.ECRSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ecscluster-module">examples.ECSCluster module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ecsfargate-module">examples.ECSFargate module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-efs-module">examples.EFS module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-elbsample-module">examples.ELBSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-emr-cluster-module">examples.EMR_Cluster module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-elasticacheredis-module">examples.ElastiCacheRedis module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-elasticbeanstalk-nodejs-sample-module">examples.ElasticBeanstalk_Nodejs_Sample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-elasticsearchdomain-module">examples.ElasticsearchDomain module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-firehose-with-redshift-module">examples.Firehose_with_Redshift module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-iam-policies-sns-publish-to-sqs-module">examples.IAM_Policies_SNS_Publish_To_SQS module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-iam-roles-and-instanceprofiles-module">examples.IAM_Roles_and_InstanceProfiles module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-iam-users-groups-and-policies-module">examples.IAM_Users_Groups_and_Policies module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-iam-users-snippet-module">examples.IAM_Users_snippet module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-iotsample-module">examples.IoTSample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-kinesis-stream-module">examples.Kinesis_Stream module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-lambda-module">examples.Lambda module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-metadata-module">examples.Metadata module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-natgateway-module">examples.NatGateway module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-networklb-module">examples.NetworkLB module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-openstack-autoscaling-module">examples.OpenStack_AutoScaling module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-openstack-server-module">examples.OpenStack_Server module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-opsworkssnippet-module">examples.OpsWorksSnippet module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-rds-snapshot-on-delete-module">examples.RDS_Snapshot_On_Delete module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-rds-vpc-module">examples.RDS_VPC module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-rds-with-dbparametergroup-module">examples.RDS_with_DBParameterGroup module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-redshift-module">examples.Redshift module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-redshiftclusterinvpc-module">examples.RedshiftClusterInVpc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-route53-a-module">examples.Route53_A module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-route53-cname-module">examples.Route53_CNAME module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-route53-roundrobin-module">examples.Route53_RoundRobin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-s3-bucket-module">examples.S3_Bucket module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-s3-bucket-with-accelerateconfiguration-module">examples.S3_Bucket_With_AccelerateConfiguration module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-s3-bucket-with-versioning-and-lifecycle-rules-module">examples.S3_Bucket_With_Versioning_And_Lifecycle_Rules module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-s3-website-bucket-with-retain-on-delete-module">examples.S3_Website_Bucket_With_Retain_On_Delete module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-sqsdlq-module">examples.SQSDLQ module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-sqsencrypt-module">examples.SQSEncrypt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-sqs-with-cloudwatch-alarms-module">examples.SQS_With_CloudWatch_Alarms module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-ssmexample-module">examples.SSMExample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-secretsmanager-module">examples.Secretsmanager module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-secretsmanager-rds-module">examples.Secretsmanager_Rds module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-serverless-api-backend-module">examples.Serverless_Api_Backend module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-serverless-deployment-preference-module">examples.Serverless_Deployment_Preference module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-serverless-s3-processor-module">examples.Serverless_S3_Processor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-vpc-ec2-instance-with-multiple-dynamic-ipaddresses-module">examples.VPC_EC2_Instance_With_Multiple_Dynamic_IPAddresses module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-vpc-with-vpn-connection-module">examples.VPC_With_VPN_Connection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-vpc-single-instance-in-subnet-module">examples.VPC_single_instance_in_subnet module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-waf-common-attacks-sample-module">examples.WAF_Common_Attacks_Sample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-waf-regional-common-attacks-sample-module">examples.WAF_Regional_Common_Attacks_Sample module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples-waitobject-module">examples.WaitObject module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-examples">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troposphere_toc.html">troposphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests_toc.html">tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html#releasing">Releasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code_of_conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">troposphere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="examples_toc.html">examples</a> &raquo;</li>
+        
+      <li>examples package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="examples-package">
+<h1>examples package<a class="headerlink" href="#examples-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-apigateway-module">
+<h2>examples.ApiGateway module<a class="headerlink" href="#examples-apigateway-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-applicationautoscalingsample-module">
+<h2>examples.ApplicationAutoScalingSample module<a class="headerlink" href="#examples-applicationautoscalingsample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-applicationelb-module">
+<h2>examples.ApplicationELB module<a class="headerlink" href="#examples-applicationelb-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-autoscaling-module">
+<h2>examples.Autoscaling module<a class="headerlink" href="#examples-autoscaling-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-autoscalinghttprequests-module">
+<h2>examples.AutoscalingHTTPRequests module<a class="headerlink" href="#examples-autoscalinghttprequests-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-batch-module">
+<h2>examples.Batch module<a class="headerlink" href="#examples-batch-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-certificatemanagersample-module">
+<h2>examples.CertificateManagerSample module<a class="headerlink" href="#examples-certificatemanagersample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-classextensions-module">
+<h2>examples.ClassExtensions module<a class="headerlink" href="#examples-classextensions-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-cloudformation-init-configset-module">
+<h2>examples.CloudFormation_Init_ConfigSet module<a class="headerlink" href="#examples-cloudformation-init-configset-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-cloudfront-distribution-s3-module">
+<h2>examples.CloudFront_Distribution_S3 module<a class="headerlink" href="#examples-cloudfront-distribution-s3-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-cloudfront-streamingdistribution-s3-module">
+<h2>examples.CloudFront_StreamingDistribution_S3 module<a class="headerlink" href="#examples-cloudfront-streamingdistribution-s3-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-cloudtrail-module">
+<h2>examples.CloudTrail module<a class="headerlink" href="#examples-cloudtrail-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-cloudwatcheventssample-module">
+<h2>examples.CloudWatchEventsSample module<a class="headerlink" href="#examples-cloudwatcheventssample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-codebuild-module">
+<h2>examples.CodeBuild module<a class="headerlink" href="#examples-codebuild-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-codedeploy-module">
+<h2>examples.CodeDeploy module<a class="headerlink" href="#examples-codedeploy-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-codepipeline-module">
+<h2>examples.CodePipeline module<a class="headerlink" href="#examples-codepipeline-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-customresource-module">
+<h2>examples.CustomResource module<a class="headerlink" href="#examples-customresource-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-dlm-module">
+<h2>examples.Dlm module<a class="headerlink" href="#examples-dlm-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-dynamodb-table-module">
+<h2>examples.DynamoDB_Table module<a class="headerlink" href="#examples-dynamodb-table-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-dynamodb-table-with-gsi-and-nonkeyattributes-projection-module">
+<h2>examples.DynamoDB_Table_With_GSI_And_NonKeyAttributes_Projection module<a class="headerlink" href="#examples-dynamodb-table-with-gsi-and-nonkeyattributes-projection-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-dynamodb-table-with-globalsecondaryindex-module">
+<h2>examples.DynamoDB_Table_With_GlobalSecondaryIndex module<a class="headerlink" href="#examples-dynamodb-table-with-globalsecondaryindex-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-dynamodb-tables-ondemand-module">
+<h2>examples.DynamoDB_Tables_OnDemand module<a class="headerlink" href="#examples-dynamodb-tables-ondemand-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ec2conditions-module">
+<h2>examples.EC2Conditions module<a class="headerlink" href="#examples-ec2conditions-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ec2instancesample-module">
+<h2>examples.EC2InstanceSample module<a class="headerlink" href="#examples-ec2instancesample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ec2-remove-ephemeral-drive-module">
+<h2>examples.EC2_Remove_Ephemeral_Drive module<a class="headerlink" href="#examples-ec2-remove-ephemeral-drive-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ecrsample-module">
+<h2>examples.ECRSample module<a class="headerlink" href="#examples-ecrsample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ecscluster-module">
+<h2>examples.ECSCluster module<a class="headerlink" href="#examples-ecscluster-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ecsfargate-module">
+<h2>examples.ECSFargate module<a class="headerlink" href="#examples-ecsfargate-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-efs-module">
+<h2>examples.EFS module<a class="headerlink" href="#examples-efs-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-elbsample-module">
+<h2>examples.ELBSample module<a class="headerlink" href="#examples-elbsample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-emr-cluster-module">
+<h2>examples.EMR_Cluster module<a class="headerlink" href="#examples-emr-cluster-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-elasticacheredis-module">
+<h2>examples.ElastiCacheRedis module<a class="headerlink" href="#examples-elasticacheredis-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-elasticbeanstalk-nodejs-sample-module">
+<h2>examples.ElasticBeanstalk_Nodejs_Sample module<a class="headerlink" href="#examples-elasticbeanstalk-nodejs-sample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-elasticsearchdomain-module">
+<h2>examples.ElasticsearchDomain module<a class="headerlink" href="#examples-elasticsearchdomain-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-firehose-with-redshift-module">
+<h2>examples.Firehose_with_Redshift module<a class="headerlink" href="#examples-firehose-with-redshift-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-iam-policies-sns-publish-to-sqs-module">
+<h2>examples.IAM_Policies_SNS_Publish_To_SQS module<a class="headerlink" href="#examples-iam-policies-sns-publish-to-sqs-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-iam-roles-and-instanceprofiles-module">
+<h2>examples.IAM_Roles_and_InstanceProfiles module<a class="headerlink" href="#examples-iam-roles-and-instanceprofiles-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-iam-users-groups-and-policies-module">
+<h2>examples.IAM_Users_Groups_and_Policies module<a class="headerlink" href="#examples-iam-users-groups-and-policies-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-iam-users-snippet-module">
+<h2>examples.IAM_Users_snippet module<a class="headerlink" href="#examples-iam-users-snippet-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-iotsample-module">
+<h2>examples.IoTSample module<a class="headerlink" href="#examples-iotsample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-kinesis-stream-module">
+<h2>examples.Kinesis_Stream module<a class="headerlink" href="#examples-kinesis-stream-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-lambda-module">
+<h2>examples.Lambda module<a class="headerlink" href="#examples-lambda-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-metadata-module">
+<h2>examples.Metadata module<a class="headerlink" href="#examples-metadata-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-natgateway-module">
+<h2>examples.NatGateway module<a class="headerlink" href="#examples-natgateway-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-networklb-module">
+<h2>examples.NetworkLB module<a class="headerlink" href="#examples-networklb-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-openstack-autoscaling-module">
+<h2>examples.OpenStack_AutoScaling module<a class="headerlink" href="#examples-openstack-autoscaling-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-openstack-server-module">
+<h2>examples.OpenStack_Server module<a class="headerlink" href="#examples-openstack-server-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-opsworkssnippet-module">
+<h2>examples.OpsWorksSnippet module<a class="headerlink" href="#examples-opsworkssnippet-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-rds-snapshot-on-delete-module">
+<h2>examples.RDS_Snapshot_On_Delete module<a class="headerlink" href="#examples-rds-snapshot-on-delete-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-rds-vpc-module">
+<h2>examples.RDS_VPC module<a class="headerlink" href="#examples-rds-vpc-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-rds-with-dbparametergroup-module">
+<h2>examples.RDS_with_DBParameterGroup module<a class="headerlink" href="#examples-rds-with-dbparametergroup-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-redshift-module">
+<h2>examples.Redshift module<a class="headerlink" href="#examples-redshift-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-redshiftclusterinvpc-module">
+<h2>examples.RedshiftClusterInVpc module<a class="headerlink" href="#examples-redshiftclusterinvpc-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-route53-a-module">
+<h2>examples.Route53_A module<a class="headerlink" href="#examples-route53-a-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-route53-cname-module">
+<h2>examples.Route53_CNAME module<a class="headerlink" href="#examples-route53-cname-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-route53-roundrobin-module">
+<h2>examples.Route53_RoundRobin module<a class="headerlink" href="#examples-route53-roundrobin-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-s3-bucket-module">
+<h2>examples.S3_Bucket module<a class="headerlink" href="#examples-s3-bucket-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-s3-bucket-with-accelerateconfiguration-module">
+<h2>examples.S3_Bucket_With_AccelerateConfiguration module<a class="headerlink" href="#examples-s3-bucket-with-accelerateconfiguration-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-s3-bucket-with-versioning-and-lifecycle-rules-module">
+<h2>examples.S3_Bucket_With_Versioning_And_Lifecycle_Rules module<a class="headerlink" href="#examples-s3-bucket-with-versioning-and-lifecycle-rules-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-s3-website-bucket-with-retain-on-delete-module">
+<h2>examples.S3_Website_Bucket_With_Retain_On_Delete module<a class="headerlink" href="#examples-s3-website-bucket-with-retain-on-delete-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-sqsdlq-module">
+<h2>examples.SQSDLQ module<a class="headerlink" href="#examples-sqsdlq-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-sqsencrypt-module">
+<h2>examples.SQSEncrypt module<a class="headerlink" href="#examples-sqsencrypt-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-sqs-with-cloudwatch-alarms-module">
+<h2>examples.SQS_With_CloudWatch_Alarms module<a class="headerlink" href="#examples-sqs-with-cloudwatch-alarms-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-ssmexample-module">
+<h2>examples.SSMExample module<a class="headerlink" href="#examples-ssmexample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-secretsmanager-module">
+<h2>examples.Secretsmanager module<a class="headerlink" href="#examples-secretsmanager-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-secretsmanager-rds-module">
+<h2>examples.Secretsmanager_Rds module<a class="headerlink" href="#examples-secretsmanager-rds-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-serverless-api-backend-module">
+<h2>examples.Serverless_Api_Backend module<a class="headerlink" href="#examples-serverless-api-backend-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-serverless-deployment-preference-module">
+<h2>examples.Serverless_Deployment_Preference module<a class="headerlink" href="#examples-serverless-deployment-preference-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-serverless-s3-processor-module">
+<h2>examples.Serverless_S3_Processor module<a class="headerlink" href="#examples-serverless-s3-processor-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-vpc-ec2-instance-with-multiple-dynamic-ipaddresses-module">
+<h2>examples.VPC_EC2_Instance_With_Multiple_Dynamic_IPAddresses module<a class="headerlink" href="#examples-vpc-ec2-instance-with-multiple-dynamic-ipaddresses-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-vpc-with-vpn-connection-module">
+<h2>examples.VPC_With_VPN_Connection module<a class="headerlink" href="#examples-vpc-with-vpn-connection-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-vpc-single-instance-in-subnet-module">
+<h2>examples.VPC_single_instance_in_subnet module<a class="headerlink" href="#examples-vpc-single-instance-in-subnet-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-waf-common-attacks-sample-module">
+<h2>examples.WAF_Common_Attacks_Sample module<a class="headerlink" href="#examples-waf-common-attacks-sample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-waf-regional-common-attacks-sample-module">
+<h2>examples.WAF_Regional_Common_Attacks_Sample module<a class="headerlink" href="#examples-waf-regional-common-attacks-sample-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples-waitobject-module">
+<h2>examples.WaitObject module<a class="headerlink" href="#examples-waitobject-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-examples">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-examples" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="troposphere_toc.html" class="btn btn-neutral float-right" title="troposphere" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="examples_toc.html" class="btn btn-neutral float-left" title="examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, cloudtools
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

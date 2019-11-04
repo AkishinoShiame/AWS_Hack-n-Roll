@@ -1,0 +1,1751 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Changelog &mdash; troposphere 2.4.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/troposphere_favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contribute.html" />
+    <link rel="prev" title="tests package" href="apis/tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/troposphere_logo_small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis/examples_toc.html">examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis/troposphere_toc.html">troposphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis/tests_toc.html">tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.5.2 (2019*09*29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.5.1 (2019*08*25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">2.5.0 (2019*07*28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">2.4.9 (2019*06*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2.4.8 (2019*06*23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">2.4.7 (2019*05*18)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">2.4.6 (2019*03*20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">2.4.5 (2019*02*19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">2.4.4 (2019*02*13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">2.4.3 (2019*02*13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">2.4.2 (2019*02*02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">2.4.1 (2019*01*09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">2.4.0 (2019*01*06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">2.3.4 (2018*11*04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">2.3.3 (2018*09*05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">2.3.2 (2018*09*04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">2.3.1 (2018*07*01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">2.3.0 (2018*05*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">2.2.2 (2018*05*23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">2.2.1 (2018*03*10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">2.2.0 (2018*01*29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id24">2.1.2 (2017*12*03)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id25">2.1.1 (2017*11*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id26">2.1.0 (2017*11*19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">2.0.2 (2017*10*23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id28">2.0.1 (2017*10*21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id29">2.0.0 (2017*10*07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id30">1.9.6 (2017*09*24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id31">1.9.5 (2017*07*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id32">1.9.4 (2017*06*04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id33">1.9.3 (2017*04*13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id34">1.9.2 (2017*01*29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id35">1.9.1 (2017*01*03)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id36">1.9.0 (2016*11*15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id37">1.8.2 (2016*10*08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id38">1.8.1 (2016*09*12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id39">1.8.0 (2016*08*15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id40">1.7.0 (2016*07*07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id41">1.6.0 (2016*05*04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id42">1.5.0 (2016*03*01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id43">1.4.0 (2016*01*01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id44">1.3.0 (2015*10*21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id45">1.2.2 (2015*09*15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id46">1.2.1 (2015*09*07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id47">1.2.0 (2015*09*04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id48">1.1.2 (2015*07*23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id49">1.1.1 (2015*07*12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id50">1.1.0 (2015*06*15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id51">1.0.0 (2015*05*11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id52">0.7.2 (2015*03*23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id53">0.7.1 (2015*01*11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id54">0.7.0 (2015*01*02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id55">0.6.2 (2014*10*09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id56">0.6.1 (2014*09*28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id57">0.6.0 (2014*08*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id58">0.5.0 (2014*03*21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id59">0.4.0 (2014*02*19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id60">0.3.4 (2013*12*05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id61">0.3.3 (2013*10*04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id62">0.3.2 (2013*09*25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id63">0.3.1 (2013*09024)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id64">0.3.0 (2013*08*07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id65">0.2.9 (2013*05*07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id66">0.2.8 (2013*04*24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id67">0.2.6 (2013*03*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id68">0.2.5 (2013*03*25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id69">0.2.0 (2013*02*26)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id70">0.1.2 (2013*02*21)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#releasing">Releasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">troposphere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Changelog</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>2.5.2 (2019*09*29)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use double validator instead of a raw float for Double types (#1485)</p></li>
+<li><p>Add PythonVersion to Glue JobCommand (#1486)</p></li>
+<li><p>ImageId in EC2 LaunchTemplateData is no longer required (#1487)</p></li>
+<li><p>Add KmsKeyID prop to AWS::ElastiCache::ReplicationGroup, per 2019 Aug 30 update (#1488)</p></li>
+<li><p>Add threshold metric to CloudWatch::Alarm (#1489)</p></li>
+<li><p>Fix naming of parameters in FindInMap helper. (#1491)</p></li>
+<li><p>Add missing EnableNonSecurity property to SSM Rule (#1493)</p></li>
+<li><p>Add EnableCloudwatchLogsExports to Neptune::DBCluster</p></li>
+<li><p>Update AppMesh::Route properties per 2019-08-29 update</p></li>
+<li><p>Add Config::OrganizationConfigRule resource</p></li>
+<li><p>Add ZoneAwarenessConfig to Elasticsearch ElasticsearchClusterConfig</p></li>
+<li><p>Add AWS::QLDB</p></li>
+<li><p>Update RDS resources per 2019-08-29 update</p></li>
+<li><p>Travis CI: Add flake8 which is a superset of pycodestyle and pyflakes (#1470)</p></li>
+<li><p>Run flake8 via “make test” (#1470)</p></li>
+<li><p>Add SourceVersion to CodeBuild::Project (#1495)</p></li>
+<li><p>Add new Properties to SSM::Parameter (#1496)</p></li>
+<li><p>iam: Add Description field to Role (#1497)</p></li>
+<li><p>Add MaximumBatchingWindowInSeconds to Lambda::EventSourceMapping</p></li>
+<li><p>Update Events::Rule EcsParameters per 2019-08-29 changes</p></li>
+<li><p>Update ECS::TaskDefinition per 2019-08-29 changes</p></li>
+<li><p>Update EC2::Instance per 2019-08-29 changes</p></li>
+<li><p>Update DynamoDB::Table per 2019-08-29 changes</p></li>
+<li><p>Update ApplicationAutoScaling::ScalableTarget per 2019-08-29 changes</p></li>
+<li><p>Update DocDB::DBCluster per 2019-09-26 changes</p></li>
+<li><p>Update Glue per 2019-09-26 changes</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>2.5.1 (2019*08*25)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix missing required field in CodeContent object (#1472)</p></li>
+<li><p>updated crawler tag attribute to match aws cloudformation doc (#1482)</p></li>
+<li><p>Change Tags to dict in Glue resources (#1482)</p></li>
+<li><p>Update gen script to understand “Json” Tags to be a dict</p></li>
+<li><p>Fixed a typo in the ClientBroker’s value (#1480)</p></li>
+<li><p>Fix test output in MskCluster.template from issue #1480</p></li>
+<li><p>Update MaintenanceWindow Properties (#1476)</p></li>
+<li><p>Modified AdditionalAuthenticationProviders field in GraphQlApi to be a list (#1479)</p></li>
+<li><p>Add new properties to Glue::Job (#1484)</p></li>
+<li><p>Update missing properties in cognito (#1475)</p></li>
+<li><p>Add AWS::LakeFormation</p></li>
+<li><p>Update dms properties</p></li>
+<li><p>Add SageMaker::Workteam</p></li>
+<li><p>Add SplitTunnel to EC2::ClientVpnEndpoint</p></li>
+<li><p>Add Tags properties to some Greengrass resources</p></li>
+<li><p>Add ExcludeVerboseContent to AppSync LogConfig property type</p></li>
+<li><p>Add AWS::ManagedBlockchain</p></li>
+<li><p>Add Glue::MLTransform resource</p></li>
+<li><p>Add AWS::CodeStar</p></li>
+<li><p>Add LinuxParameters to Batch::ContainerProperties</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>2.5.0 (2019*07*28)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Return real booleans in the output (#1409)</p>
+<p>Note: it was noted in #1136 that cfn-lint prefers real booleans. Since this
+may break existing scripts/updates, it was implemented via #1409 via an
+environment variable: TROPO_REAL_BOOL=true</p>
+<p>At some point troposphere likely will make this a warning and default to
+real booleans. Thanks for &#64;michel-k and &#64;ikben for implementing it.</p>
+</li>
+<li><p>Add AWS::SecurityHub</p></li>
+<li><p>EC2: Update SpotOptions properties</p></li>
+<li><p>Merge branch ‘master’ into feature/rules</p></li>
+<li><p>Add Template.add_rule() function to be consistent with the Template API</p></li>
+<li><p>Write doc for add_rule()</p></li>
+<li><p>Adapt test case to the add_rule() interface</p></li>
+<li><p>Add duplicate name check in add_rule</p></li>
+<li><p>Add Tags to ECR Repository definition (#1444)</p></li>
+<li><p>Merge pull request #1412 from vrtdev/feature/rules</p></li>
+<li><p>EBSBlockDevice supports KmsKeyId (#1451)</p></li>
+<li><p>Add Medialive resources (#1447)</p></li>
+<li><p>Fix RecoveryPointTags/BackupVaultTags type for AWS Backup resources (#1448)</p></li>
+<li><p>Add Code property to Codecommit (#1454)</p></li>
+<li><p>Add support for LicenseSpecification for LaunchTemplateData (#1458)</p></li>
+<li><p>Add AWS::MediaLive to README</p></li>
+<li><p>Tweak to allow “make test” work with the real boolean change (#1409)</p></li>
+<li><p>Prefer awacs.aws.PolicyDocument over awacs.aws.Policy (#1338)</p></li>
+<li><p>Add EFS FileSystem LifecyclePolicies (#1456)</p></li>
+<li><p>Fix Transfer::User SshPublicKeys type (#1459)</p></li>
+<li><p>Fix TemporaryPasswordValidityDays type (#1460)</p></li>
+<li><p>Add Cloudwatch AnomalyDetector resource (#1461)</p></li>
+<li><p>Update ASK to the latest AWS documentation (#1467)</p></li>
+<li><p>Adding AllowMajorVersionUpgrade to DMS Replication Instance (#1464)</p></li>
+<li><p>Change ElastiCache ReplicaAvailabilityZones from string to string list (#1468)</p></li>
+<li><p>Add AmazonMQ::Broker EncryptionOptions property</p></li>
+<li><p>Update AWS::Amplify resources</p></li>
+<li><p>Add AWS::IoTEvents</p></li>
+<li><p>Add Tags to AWS::CodeCommit::Repository</p></li>
+<li><p>Add EmailSendingAccount to Cognito::UserPool EmailConfiguration</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>2.4.9 (2019*06*26)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>add tag to role (#1441)</p></li>
+<li><p>Fix regression in EC2::VPNConnection - add list back to Tags (#1442)</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>2.4.8 (2019*06*23)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>[iot1click] resource_type should be a string, not tuple (#1402)</p></li>
+<li><p>Fix Parameters on AWS::Batch::JobDefinition (#1404)</p></li>
+<li><p>Add new wafregional resources (#1406)</p></li>
+<li><p>Add AppMesh::VirtualRouter (#1410)</p></li>
+<li><p>Add InterfaceType to EC2 LaunchTemplate (#1405)</p></li>
+<li><p>Adding AWS::Transfer resources, per 2019 May 23 update (#1407)</p></li>
+<li><p>Adding AWS::PinpointEmail, per 2019 May 23 update (#1408)</p></li>
+<li><p>Add missing LOCAL caching option (#1413)</p></li>
+<li><p>Allow for AWSHelperFn objects in Tags (#1403)</p></li>
+<li><p>Fix bug where FilterGroups were required, when technically they are not (#1424)</p></li>
+<li><p>Adding AWS::Backup resources from May 23, 2019 update (#1419)</p></li>
+<li><p>adding missing X-ray activation property for AWS::ApiGateway::Stage (#1420)</p></li>
+<li><p>Change add_description to set_description in all examples (#1425)</p></li>
+<li><p>Add support for httpHeaderConfig (#1426)</p></li>
+<li><p>Add Config attributes to ELBV2 Condition (#1426)</p></li>
+<li><p>Update ECS resources from June 13, 2019 update (#1430)</p></li>
+<li><p>Add ClientVPN resources (#1431)</p></li>
+<li><p>Change HeartbeatTimeout type to integer (#1415) (#1432)</p></li>
+<li><p>Add transit gateway ID to Route (#1433)</p></li>
+<li><p>Add Sagemaker::CodeRepository (#1422)</p></li>
+<li><p>Adding SageMaker NotebookInstance properties (#1421)</p></li>
+<li><p>Update ElasticLoadBalancingV2 ListenerRule (#1427)</p></li>
+<li><p>Update DLM rule interval values (#1333) (#1437)</p></li>
+<li><p>Add resources for Amazon MSK, from June 13, 2019 update (#1436)</p></li>
+<li><p>Add HostRecovery property to EC2::Host</p></li>
+<li><p>Add SecondarySourceVersions to CodeBuild::Project</p></li>
+<li><p>Add ObjectLock* properties to S3::Bucket</p></li>
+<li><p>Add Ec2SubnetIds property to EMR JobFlowInstancesConfig</p></li>
+<li><p>Add AWS::Amplify</p></li>
+<li><p>Adds ‘ErrorOutputPrefix’ to <a href="#id6"><span class="problematic" id="id7">*</span></a>S3DestinationConfiguration (#1439)</p></li>
+<li><p>Add ServiceCatalog::StackSetConstraint and update CFProvisionedProduct</p></li>
+<li><p>Add IdleDisconnectTimeoutInSeconds to AppStream::Fleet</p></li>
+<li><p>Add Config::RemediationConfiguration resource</p></li>
+<li><p>Add AppMesh AwsCloudMapServiceDiscovery and reformat for autogen</p></li>
+<li><p>DLM: add Parameters and PolicyType properties to PolicyDetails</p></li>
+<li><p>IoTAnalytics: add ContentDeliveryRules and VersioningConfiguration to Dataset</p></li>
+<li><p>KinesisFirehose: updates to ExtendedS3DestinationConfiguration</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>2.4.7 (2019*05*18)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add authenticate-cognito and authenticate-oidc to elb v2 Action’s “type” validator (#1352)</p></li>
+<li><p>Update the instance types in constants. (#1353)</p></li>
+<li><p>Add missing Termination Policies (#1354)</p></li>
+<li><p>Add Tags to various AppStream objects, per 2019 March 19 update (#1355)</p></li>
+<li><p>Add new AWS::AppMesh resources, per 2019 March 28 update (#1356)</p></li>
+<li><p>Add ServiceCatalog::ResourceUpdateConstraint</p></li>
+<li><p>Add ResourceRequirements property to Batch::JobDefinition</p></li>
+<li><p>Add an improved troposphere code generator for use with AWS spec files</p></li>
+<li><p>Add a Makefile helper to download the spec file</p></li>
+<li><p>Fix a pep8 issue introduced with pycodestyle 2.5.0</p></li>
+<li><p>Add constants for missing rds instance types (#1365)</p></li>
+<li><p>EngineAttributes should take list (#1363)</p></li>
+<li><p>Added support for lambda in TargetGroup with additional validation (#1376)</p></li>
+<li><p>Fix the scripts for Python3 (#1364)</p></li>
+<li><p>Add #! header and print_function import</p></li>
+<li><p>Add scripts directory to tests</p></li>
+<li><p>Fix pycodestyle issues with scripts</p></li>
+<li><p>Add HealthCheckEnabled to ElasticLoadBalancingV2::TargetGroup</p></li>
+<li><p>Fixed: Codebuild Webhook Filters are to be a list of list of WebhookFilter (#1372)</p></li>
+<li><p>Use enumeration in codebuild FilterGroup validate and add some tests</p></li>
+<li><p>Add AWS::EC2::CapacityReservation resource (#1379)</p></li>
+<li><p>Add AWS::Greengrass (#1384)</p></li>
+<li><p>Add Events::EventBusPolicy (#1386)</p></li>
+<li><p>Add Python 3.7 to travis testing (#1302)</p></li>
+<li><p>Added ECS ProxyConfiguration, DependsOn,  StartTimeout and StopTimeout parameters (#1382)</p></li>
+<li><p>Username property in DMS::Endpoint class should not be required (#1387)</p></li>
+<li><p>Fix MethodSettings on AWS::Serverless::Api (#1391)</p></li>
+<li><p>Adds TmpFs prop to LinuxParameters (#1392)</p></li>
+<li><p>Add SharedMemorySize property to ECS LinuxParameters (#1392)</p></li>
+<li><p>Make DefinitionString and DefinitionBody mutually exclusive, but allow no definition (#1390)</p></li>
+<li><p>Add T3a, M/R5ad, and I3en instances to constants (#1393)</p></li>
+<li><p>Fixed issue #1394 wrong appmesh Listener property and #1396 dependson should be a type list and #1397 proxy props should be list (#1395)</p></li>
+<li><p>Add ApiGatewayV2 ApiMapping and DomainName resources</p></li>
+<li><p>Added missing container name propery (#1398)</p></li>
+<li><p>Update region/az information (#1399)</p></li>
+<li><p>Add missing Role property for serverless DeploymentPreference (#1400)</p></li>
+<li><p>Add DisableTemplateValidation to ServiceCatalog ProvisioningArtifactProperties</p></li>
+<li><p>Add AWS::MediaStore</p></li>
+<li><p>Add multiple changes to AWS::Glue</p></li>
+<li><p>Add AppSync GraphQLApi changes</p></li>
+<li><p>Add TemporaryPasswordValidityDays to Cognito PasswordPolicy</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>2.4.6 (2019*03*20)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Discourage usage of Python 3.4 (#1326)</p></li>
+<li><p>Remove validation for ElastiCache::ReplicationGroup some properties (#1063)</p></li>
+<li><p>Add auth configs for ElasticLoadBalancingV2::ListenerRule actions</p></li>
+<li><p>Add new RDS DBCluster and DBInstance properties (#1329)</p></li>
+<li><p>Add new Elasticsearch Domain property (#1330)</p></li>
+<li><p>Add new ApiGateway Apikey property (#1331)</p></li>
+<li><p>Add new Codebuild ProjectCache property (#1332)</p></li>
+<li><p>Add new AWS::RAM and AWS::RoboMaker resources</p></li>
+<li><p>Add psuedo-parameter Ref for AWS::Partition (#1334)</p></li>
+<li><p>Add SageMaker::NotebookInstance VolumeSizeInGB property</p></li>
+<li><p>Add missing properties in SSM::PatchBaseline (#1339)</p></li>
+<li><p>Add Tags to StepFunctions objects, per 2019 March 07 update (#1340)</p></li>
+<li><p>Update valid values for emr.StepConfig ActionOnFailure (#1350)</p></li>
+<li><p>Add RootAccess prop to AWS::SageMaker::NotebookInstance, per 2019 March 14 update (#1342)</p></li>
+<li><p>Add prop to AWS::OpsWorksCM::Server per 2019 March 14 update (#1343)</p></li>
+<li><p>Add new AWS::CodeBuild::Project props, per 2019 March 14 update (#1344)</p></li>
+<li><p>Fix EC2 SpotFleet LoadBalancersConfig TargetGroupConfig (#1346)</p></li>
+<li><p>Add URLSuffix Ref (#1347)</p></li>
+<li><p>CodeBuild::Project Name is not required (#1348)</p></li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h2>2.4.5 (2019*02*19)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add “pip install” step for source dist file before a release (#1318)</p></li>
+<li><p>Exclude OpenStack modules within the template generator (#1319)</p></li>
+<li><p>Add AWS::CodeBuild::Project subproperties, per Feb 2019 14 update (#1321)</p></li>
+<li><p>Add AWS::FSx::FileSystem resource, per Feb 2019 15 update (#1322)</p></li>
+<li><p>Add KinesisAnalyticsV2 resources, per 2019 Feb 15 update (#1323)</p></li>
+<li><p>Remove awacs as a hard dependency; ensure awacs&gt;=0.8 otherwise (#1325)</p></li>
+<li><p>Add FSx and KinesisAnalyticsV2 modules to the documentation</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>2.4.4 (2019*02*13)<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Include requirements.txt in release tarball</p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h2>2.4.3 (2019*02*13)<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix Glue StorageDescriptor NumberOfBuckets spelling (#1310)</p></li>
+<li><p>ServiceDiscovery::Service DNSConfig is no longer required</p></li>
+<li><p>Sphinx docs (#1311)</p></li>
+<li><p>Add autogeneration of troposphere index files</p></li>
+<li><p>Fix  ApiGateway AccessLogSetting prop spelling (#1316)</p></li>
+<li><p>Docs update (#1314)</p></li>
+<li><p>Add AWS::ApiGatewayV2 Resources (#1312)</p></li>
+<li><p>Updates for new resources being added</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>2.4.2 (2019*02*02)<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add AWS::DocDB</p></li>
+<li><p>Add UpdateReplacePolicy attribute</p></li>
+<li><p>Use a dict instead of the Tags object for the Tags property on the dax resource (#1045) (#1046)</p></li>
+<li><p>Add better method names for Troposphere objects. (#1169)</p></li>
+<li><p>Update integer_list_item to always cast value to an int for comparison (#1192)</p></li>
+<li><p>Remove name parameter from json_checker (#1260)</p></li>
+<li><p>Remove duplicate VpcConfig/DomainJoinInfo classes from AppStream (#1285)</p></li>
+<li><p>Add ‘Kind’ property to AWS::AppSync::Resolver (#1287)</p></li>
+<li><p>Add missing region information. (#1288)</p></li>
+<li><p>Fix tag sorting on py3 (#1289)</p></li>
+<li><p>Updated autoscalingplans to match cloudformation doco (#1291)</p></li>
+<li><p>ResourceGroupArn is no longer mandatory for AWS::Inspector::AssessmentTarget (#1292)</p></li>
+<li><p>Fix creating RotationSchedule for SecretsManager (#1293)</p></li>
+<li><p>Add missing serverless properties (Fixes #1294)</p></li>
+<li><p>Make DataSourceName non*mandatory in appsync resolvers (#1296)</p></li>
+<li><p>Add new properties to AWS::CodeBuild::Project, per 2019 Jan 24 update (#1297)</p></li>
+<li><p>Add new AWS::OpsWorksCM::Server resource, per 2019 Jan 24 update (#1298)</p></li>
+<li><p>Add AWS::Serverless::LayerVersion (#1305)</p></li>
+<li><p>Fix for AWS Lambda reserved environment variables (#1306)</p></li>
+<li><p>Add SqsParameters support to Rule Target (#1307)</p></li>
+<li><p>Add DestinationPrefixListId to EC2 SecurityGroupRule (#1309)</p></li>
+<li><p>Fix for pyflakes 2.1.0</p></li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>2.4.1 (2019*01*09)<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add a S3OriginConfig object to distinguish between Distribution and StreamingDistribution properties (#1273)</p></li>
+<li><p>Add SSM Example for patch baselines and filter groups (#1274)</p></li>
+<li><p>Add better validation for AWS::CloudWatch::Alarm properties (#1276)</p></li>
+<li><p>Allow empty To/From port ranges for SG’s for certain IP protocols (#1277)</p></li>
+<li><p>Add additional properties to AWS::Serverless::Api (#1278)</p></li>
+<li><p>Fixes DynamoDB validator error (#1280)</p></li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>2.4.0 (2019*01*06)<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Setup tox (#1187)</p></li>
+<li><p>Set line length for Python files in EditorConfig (#1188)</p></li>
+<li><p>Fix EC2 SpotFleet properties #1195 (#1198)</p></li>
+<li><p>Add MultiValueAnswer property for AWS::Route53::RecordSet (#1199)</p></li>
+<li><p>adding RDS properties, per Nov 9 2018 update <a class="reference external" href="https://docs.aws.amazon">https://docs.aws.amazon</a>.… (#1201)</p></li>
+<li><p>Add Secrets Managers resources, per Nov 9 2018 update (#1202)</p></li>
+<li><p>Add DLM support, per Nov 12 2018 update (#1203)</p></li>
+<li><p>Adds support for Permissions Boundaries on AWS::IAM::Role and AWS::IAM::User (#1205)</p></li>
+<li><p>Add support for multi*region action in CodePipeline (#1207)</p></li>
+<li><p>Added support for Aurora BacktrackWindow. (#1210)</p></li>
+<li><p>Add AWS::AppStream resources</p></li>
+<li><p>Add Tags and WorkspaceProperties to WorkSpaces::Workspace</p></li>
+<li><p>Add support for AWS::AutoScalingPlans::ScalingPlan (#1197)</p></li>
+<li><p>adding KmsMasterKeyId to Topics, per Nov 19 2018 update</p></li>
+<li><p>adding PublicAccessBlockConfiguration to s3 buckets, per Nov 19 2018 update</p></li>
+<li><p>Validate Lambda environment variable names (#1186)</p></li>
+<li><p>Fix DockerVolumeConfiguration Labels and DriverOpts definition (#1194)</p></li>
+<li><p>Setup to_dict for Tags AWSHelper (#1189)</p></li>
+<li><p>Delete CodeDeploy EC2TagSetList class as it is just a property of EC2TagSet (#1212)</p></li>
+<li><p>Fix bugs and add missing properties in sagemaker (#1214)</p></li>
+<li><p>adding DeletionProtection property to RDS, per Nov 19 2018 update (#1215)</p></li>
+<li><p>adding PublicAccessBlockConfiguration to s3 buckets, per Nov 19 2018 update (#1216)</p></li>
+<li><p>Merge pull request #1217 from axelpavageau/feature/sns*20181119*update</p></li>
+<li><p>Add volume encryption, per Nov 19 2018 update (#1218)</p></li>
+<li><p>Add PublicIpv4Pool property to EIPs, per Nov 19 2018 update (#1219)</p></li>
+<li><p>Add new Lambda resources and props, per Nov 29 2018 update (#1242)</p></li>
+<li><p>Add MixedInstancesPolicy property to autoscaling groups, per Nov 19 2018 update. (#1220)</p></li>
+<li><p>Add tags to API Gateway resources, per Nov 19 2018 update (#1221)</p></li>
+<li><p>Add various EMR properties, per Nov 19 2018 update (#1222)</p></li>
+<li><p>Add new kinesis resource, per Nov 20 2018 update (#1224)</p></li>
+<li><p>Make Lambda::LayerVersion CompatibleRuntimes a list of strings</p></li>
+<li><p>Add new route53 resources, per Nov 20 2018 update (#1223)</p></li>
+<li><p>Add new EC2Fleet resource, per Nov 20 2018 update (#1225)</p></li>
+<li><p>Add new appsync FunctionConfiguration resource &amp; properties, per Nov 20 2018 update (#1226)</p></li>
+<li><p>Update AWS::CloudWatch::Alarm, per Nov 20 2018 update (#1227)</p></li>
+<li><p>CloudWatch MetricDataQuery Id is required</p></li>
+<li><p>Add DatapointsToAlarm to AWS::CloudWatch::Alarm (#1244)</p></li>
+<li><p>Alphabetize DatapointsToAlarm in CloudWatch</p></li>
+<li><p>Update Autoscalingplans properties, per Nov 20 2018 update (#1228)</p></li>
+<li><p>Add Iot1click resources (#1229)</p></li>
+<li><p>Add new Transit Gateway resources, per Nov 26 2018 release (#1232)</p></li>
+<li><p>Fix online merge issue</p></li>
+<li><p>Fixes EC2 SpotFleet LoadBalancersConfig structure (#1233)</p></li>
+<li><p>Sets InstanceType in EC2 LaunchTemplateData to not required. (#1234)</p></li>
+<li><p>Add new HttpNamespace resource &amp; various servicediscovery props, per Nov 28 2018 update (#1237)</p></li>
+<li><p>Add new ec2 properties, per Nov 28 2018 update (#1238)</p></li>
+<li><p>EC2 Instance LicenseConfigurationArn is required</p></li>
+<li><p>Add on*demand billing for DynamoDB tables (#1243)</p></li>
+<li><p>Correct RoleArn case for OrganizationAggregationSource (#1247)</p></li>
+<li><p>Add various codebuild properties, per Dec 6 2018 update (#1249)</p></li>
+<li><p>Add support for DeploymentPreference to AWS::Serverless::Function (#1251)</p></li>
+<li><p>Update typo on EnableCloudwatchLogsExports (#1253)</p></li>
+<li><p>Add new AmazonMQ resource, per Dec 13 2018 update (#1254)</p></li>
+<li><p>Add Alexa Skill resource, per Nov 20 2018 update (#1230)</p></li>
+<li><p>Add new IoTAnalytics resources, per Dec 13 2018 update (#1255)</p></li>
+<li><p>Extend Action to support Redirect and FixedResponse for AWS::ElasticLoadBalancingV2::ListenerRule (#1140)</p></li>
+<li><p>Add support for extensible resource definitions in template generator (#1154)</p></li>
+<li><p>Updates CloudFront with missing parameters and validators (#1235)</p></li>
+<li><p>Added support for AWS Batch PlacementGroup &amp; LaunchTemplate (#1262)</p></li>
+<li><p>Add DeleteAutomatedBackups to RDS DBInstance (#1263)</p></li>
+<li><p>Add missing KMS key properties (#1265)</p></li>
+<li><p>Fix pep errors due to online merge</p></li>
+<li><p>Fix EC2Fleet class definition to match functional correctness of CloudFormation (#1266)</p></li>
+<li><p>Add Tags property to AWS::AmazonMQ::Broker, per 2019 Jan 3 update (#1267)</p></li>
+<li><p>Add Containers property to AWS::SageMaker::Model per 2019 Jan 3 update (#1268)</p></li>
+<li><p>Add AWS::Route53Resolver::ResolverRuleAssociation resource, per 2019 Jan 3 update (#1269)</p></li>
+<li><p>Fix nested ‘Name’ sections in Output import (#1270)</p></li>
+<li><p>README.rst: Use SVG build status badge (#1271)</p></li>
+<li><p>Add test for nested Name in TemplateGenerator fixed via #1270</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>2.3.4 (2018*11*04)<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add CloudFormation::Macro</p></li>
+<li><p>Instance ImageId is no longer required, specifically if using Launch Templates; updated tests (#1137)</p></li>
+<li><p>Fix amazonmq missing properties (#1143)</p></li>
+<li><p>Update AmazonMQ::Broker properties to use [basestring] instead of list</p></li>
+<li><p>Update the OnPremisesInstanceTagFilters parameter for AWS::CodeDeploy::DeploymentGroup (#1145)</p></li>
+<li><p>Update constants.py (#1147)</p></li>
+<li><p>Fix AutoScalingRollingUpdate validation failure (#1148)</p></li>
+<li><p>Adding UseOnlineResharding policy per 09/20/2018 update (#1149)</p></li>
+<li><p>Add SchedulingStrategy as a prop to ecs.Service (#1150)</p></li>
+<li><p>Added ConnectionId and ConnectionType to API GW method integration (#1153)</p></li>
+<li><p>Use dict as aws expects for ApiGateway::RestApi Parameters (#1156)</p></li>
+<li><p>Add support for AWS*interface metadata (#1171)</p></li>
+<li><p>Add new properties to ServiceRegistry (#1172)</p></li>
+<li><p>[#1167] Add support for DockerVolumeConfiguration in AWS::ECS::TaskDefinition (#1168)</p></li>
+<li><p>Add missing Codebuild source types (#1160)</p></li>
+<li><p>[#1155] Aurora serverless support (#1166)</p></li>
+<li><p>Missing RepositoryCredentials attribute for ContainerDefinition object (#1165)</p></li>
+<li><p>Update for new S3 destination option in flow logs (#1158)</p></li>
+<li><p>updates rds vpc example and closes #985 (#1157)</p></li>
+<li><p>Update apigateway as of 09/20/18 (#1173)</p></li>
+<li><p>Add missing APIGateway properties</p></li>
+<li><p>Update codebuild as of 09/20/18 (#1175)</p></li>
+<li><p>Update ec2 as of 09/20/18 (#1177)</p></li>
+<li><p>Additional codebuild source types (#1178)</p></li>
+<li><p>Use basestring to allow percentage definition in MaintenanceWindowTask (#1151)</p></li>
+<li><p>Fix issues with CanaraySettings properties (#1181)</p></li>
+<li><p>9/20/2018 update * NodeGroupId for Elasticache (#1182)</p></li>
+<li><p>Update codedeploy as of 09/20/18 (#1176)</p></li>
+<li><p>Add LambdaPermission in Example CloudWatchEventsSample.py (#1141)</p></li>
+<li><p>improve double validation and fix some property datatypes (#1179)</p></li>
+<li><p>Fix #1174 TemplateGenerator fail to parse template Fn::Sub with variable (#1180)</p></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>2.3.3 (2018*09*05)<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Revert schedule expression validation (#1114)</p></li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>2.3.2 (2018*09*04)<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Auto add Parameter and Output to template when specified (#1018)</p></li>
+<li><p>Changed policy to AmazonDynamoDBFullAccess for delete and put (#1106)</p></li>
+<li><p>Fix CPUCredits casing and implement LaunchTemplateCreditSpecification class (#1100)</p></li>
+<li><p>Add UsernameAttributes to Cognito (#1104)</p></li>
+<li><p>Add SQS Event to serverless.py (#1103)</p></li>
+<li><p>Add support for Windows containers in CodeBuild (#1097)</p></li>
+<li><p>Generate class stubs necessary for autocompletion (#1079)</p></li>
+<li><p>Add AWS::IAM::ServiceLinkedRole (#1110)</p></li>
+<li><p>Made S3 Prefix in Firehose optional (#1102)</p></li>
+<li><p>Prefix is still required in ExtendedS3DestinationConfiguration</p></li>
+<li><p>SimpleTable has more attributes (#1108)</p></li>
+<li><p>Alphabetize properties in servlerless::SimpleTable</p></li>
+<li><p>AccountAggregationSources must be a list (#1111)</p></li>
+<li><p>Schedule expression validation (#1114)</p></li>
+<li><p>Add EndpointIdnetifier property to AWS::DMS::Endpoint object (#1117)</p></li>
+<li><p>Add get_or_add parameter method (#1118)</p></li>
+<li><p>Added HealthCheckCustomConfig to ServiceDiscovery Service (#1120)</p></li>
+<li><p>Tags support for SQS queues (#1121)</p></li>
+<li><p>VPCPeeringConnection PeerRegion (#1123)</p></li>
+<li><p>Add FilterPolicy as a property of SubscriptionResource (#1125)</p></li>
+<li><p>Add missing properties to SNS::Subscription</p></li>
+<li><p>Add ThroughputMode and ProvisionedThroughputInMibps to EFS (#1124) (#1126)</p></li>
+<li><p>Add AWS::EC2::VPCEndpointServicePermissions (#1130)</p></li>
+<li><p>AMAZON_LINUX_2 is now supported by SSM (#1133)</p></li>
+<li><p>[codebuild] Source * use value comparison instead of identity (#1134)</p></li>
+<li><p>InvitationId in GuardDuty::Master is now optional</p></li>
+<li><p>Fix missing boolean import in sns</p></li>
+<li><p>Add CodePipeline::Webhook resource</p></li>
+<li><p>Add ReportBuildStatus to CodeBuild Source property</p></li>
+<li><p>Add HttpConfig to AppSync::DataSource</p></li>
+<li><p>Add FieldLevelEncryptionId to CacheBehavior properties</p></li>
+<li><p>Add Timeout to Batch::JobDefinition</p></li>
+<li><p>Add EncryptionDisabled and OverrideArtifactName to CodeBuild Artifacts</p></li>
+<li><p>Add SSESpecification to DAX::Cluster</p></li>
+<li><p>Add KerberosAttributes to EMR::Cluster</p></li>
+<li><p>Add ValidationMethod to CertificateManager::Certificate</p></li>
+<li><p>Add Classifiers and Configuration to Glue resources</p></li>
+<li><p>Add SecondaryArtifacts and SecondarySources to CodeBuild::Project</p></li>
+<li><p>Add Logs to AmazonMQ::Broker</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>2.3.1 (2018*07*01)<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add support for AWS::Neptune</p></li>
+<li><p>Add support for AWS::EKS</p></li>
+<li><p>Add support for AWS::AmazonMQ</p></li>
+<li><p>Add support for AWS::SageMaker</p></li>
+<li><p>Fix use of to_yaml long_form parameter (#1055)</p></li>
+<li><p>Adding CENTOS to validators.operating_system (#1058)</p></li>
+<li><p>Update constants with additional EC2 instances (#1059)</p></li>
+<li><p>Fix casing of CreditSpecification CpuCredits (#1068)</p></li>
+<li><p>Add ‘Name’ property for AWS::Serverless::Api (#1070)</p></li>
+<li><p>Add equality methods to Template (#1072)</p></li>
+<li><p>AWS PrivateLink support (#1084)</p></li>
+<li><p>Add return value to template.add_condition() (#1087)</p></li>
+<li><p>Add tests for to_yaml parameters</p></li>
+<li><p>Use endpoint_type for vpc_endpoint_type param instead of type</p></li>
+<li><p>Add resource EC2::VPCEndpointConnectionNotification</p></li>
+<li><p>Add resource SSM::ResourceDataSync</p></li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h2>2.3.0 (2018*05*26)<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Allow Refs to be hashable using their data (#1053)</p></li>
+<li><p>Add AWS::Budgets</p></li>
+<li><p>Add new AWS::ServiceCatalog resources</p></li>
+<li><p>Add Policy to ApiGateway::RestApi</p></li>
+<li><p>Add ServiceLinkedRoleARN to AutoScaling::AutoScalingGroup</p></li>
+<li><p>Add LaunchConfigurationName to AutoScaling::LaunchConfiguration</p></li>
+<li><p>Add Edition to DirectoryService::MicrosoftAD</p></li>
+<li><p>Add PointInTimeRecoverySpecification to DynamoDB::Table</p></li>
+<li><p>Add ServiceRegistries to ECS::Service</p></li>
+<li><p>Add HealthCheck to ECS::TaskDefinition ContainerDefinition</p></li>
+<li><p>Add EncryptionAtRestOptions to Elasticsearch::Domain</p></li>
+<li><p>Add MaxSessionDuration ti IAM::Role</p></li>
+<li><p>Add SplunkDestinationConfiguration to KinesisFirehose::DeliveryStream</p></li>
+<li><p>StartingPosition is no longer required in Lambda::EventSourceMapping</p></li>
+<li><p>Add DefaultValue to Logs::MetricFilter MetricTransformation</p></li>
+<li><p>Add OutputLocation to SSM::Association</p></li>
+<li><p>Add AutoScaling and EC2  LaunchTemplate support (#1038)</p></li>
+<li><p>Add LaunchTemplate to EC2::Instance</p></li>
+<li><p>Adding ECS Container Healthchecks tests (#1024)</p></li>
+<li><p>Rename ActionTypeID to ActionTypeId in CodePipeline</p></li>
+</ul>
+</div>
+<div class="section" id="id21">
+<h2>2.2.2 (2018*05*23)<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Allow up to 50:1 ratio for iops and allocated storage</p></li>
+<li><p>Correct Spot Fleet TagSpecifications (#1010)</p></li>
+<li><p>Change GetCidr to Cidr (Fixes #1013)</p></li>
+<li><p>Add missing OpsWorks::Instance properties (Fixes #1014)</p></li>
+<li><p>Adding SUSE to list of operating systems for SSM (#1015)</p></li>
+<li><p>Updates for latest pycodestyle warnings</p></li>
+<li><p>Add AWS::AppSync</p></li>
+<li><p>Add AWS::ServiceCatalog</p></li>
+<li><p>Special case Tags support in gen.py</p></li>
+<li><p>Add constants for EC2 C5 instance types (#1025)</p></li>
+<li><p>Update guardduty.py (#1037)</p></li>
+<li><p>Add OpenIdConnectConfig to AppSync::GraphQLApi</p></li>
+<li><p>Update AWS Config features (updates #1022)</p></li>
+<li><p>Updated appsync apikey expires to be an int. (#1040)</p></li>
+<li><p>Fix AutoScalingRole in EMR: Fixes #984 (#1036)</p></li>
+<li><p>Rename SES Template to EmailTemplate (#1047)</p></li>
+<li><p>Add GuardDuty::Filter</p></li>
+<li><p>Remove python 3.3 support since it’s EOL (#1049)</p></li>
+<li><p>Corrected the description of NatGateway (#1005)</p></li>
+<li><p>Update deprecated modules (#1007)</p></li>
+<li><p>Updared CodeBuild Source Options (#1017)</p></li>
+<li><p>Allow Ref’s to test equality against their data (#1048)</p></li>
+<li><p>Update to cfn*flip 1.0.2 (#1003)</p></li>
+<li><p>Eliminate infinite loop when pickle loads BaseAWSObject and objects derived from it. (#1016)</p></li>
+<li><p>Allow multiple NoValue properties in mutually_exclusive (#1050)</p></li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h2>2.2.1 (2018*03*10)<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>type is not required for EnvironmentVariable (#975)</p></li>
+<li><p>Properly handle list objects used with DependsOn (Fixes #982)</p></li>
+<li><p>Explicitly convert allocated_storage to integer before using it in comparisons (#983)</p></li>
+<li><p>Allow CreationPolicy override of props on WaitCondition (#988)</p></li>
+<li><p>“JobDefinitionName” property in JobDefinition class is not required (#995)</p></li>
+<li><p>ApiGateway::DomainName CertificateArn fix (#996)</p></li>
+<li><p>Tags support for SSM documents #999 (#1000)</p></li>
+<li><p>Add SSESpecification to DynamoDB::Table (#981)</p></li>
+<li><p>Add GitCloneDepth and InsecureSsl to CodeBuild Source</p></li>
+<li><p>Add Trippers property to CodeBuild::Project</p></li>
+<li><p>Add aurora*mysql to list of valid RDS engines</p></li>
+<li><p>Batch ContainerProperties is required</p></li>
+<li><p>Add Regions to Route53 HealthCheckConfiguration</p></li>
+<li><p>Add ClusterIdentifier to Redshift::Cluster</p></li>
+<li><p>Add DBClusterIdentifier to RDS::DBCluster</p></li>
+<li><p>Add TagSpecification to EC2::SpotFleet LaunchSpecifcations</p></li>
+<li><p>Add DisableScaleIn to ApplicationAutoScaling</p></li>
+<li><p>Add ApiKeySourceType and MinimumCompressionSize to ApiGateway::RestApi</p></li>
+<li><p>Add AutoScalingGroupName to AutoScaling::AutoScalingGroup</p></li>
+<li><p>Add AWS::ApiGateway::VpcLink</p></li>
+<li><p>Add AWS::GuardDuty::Master and AWS::GuardDuty::Member</p></li>
+<li><p>Add AWS::SES</p></li>
+<li><p>Add GetCidr function for Fn::GetCidr</p></li>
+</ul>
+</div>
+<div class="section" id="id23">
+<h2>2.2.0 (2018*01*29)<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add AWS::Inspector</p></li>
+<li><p>Add AWS::ServiceDiscovery</p></li>
+<li><p>Add InputProcessingConfiguration to KinesisAnalytics::Application</p></li>
+<li><p>EndpointConfiguration in ApiGateway::DomainName is not required</p></li>
+<li><p>Allow setting Subnets and SubnetMappings properties on ELBv2 LoadBalancers (#934)</p></li>
+<li><p>increase lambda memory limit to support up to 3008 MB (#936)</p></li>
+<li><p>Stop validation if CodeBuild Source Type is a Ref (#940)</p></li>
+<li><p>Added support for AutoPublishAlias to AWS::Serverless::Function as specified https://github.com/awslabs/serverless*application*model/blob/master/versions/2016*10*31.md (#941)</p></li>
+<li><p>Add resource_type value and unit tests for guardduty AWSObject’s (#945)</p></li>
+<li><p>Added elasticsearch instance types for m4, c4 and r4 generations (#948)</p></li>
+<li><p>Correct type in API Gateway GatewayResponse type (#950)</p></li>
+<li><p>Fixes the lifecyclepolicy problem reported at Issue #953 (#954)</p></li>
+<li><p>Add constants for EC2 M5 instance types (#955)</p></li>
+<li><p>Adding support for Block Device Mapping V2 (#960)</p></li>
+<li><p>Add support for Policy Document in SAM template. (#961)</p></li>
+<li><p>Stab at documenting Troposphere basics (#963)</p></li>
+<li><p>Adding HealthCheckGracePeriodSeconds into ECS Service (#966)</p></li>
+<li><p>Add AllowedPattern to Parameter (#968)</p></li>
+<li><p>Add long form parameter to to_yaml (#972)</p></li>
+<li><p>Use S3.Filter for the serverless S3Event Filter property</p></li>
+<li><p>Remove erroneous print in tests/test_serverless.py</p></li>
+<li><p>Add FunctionForPackaging class to serverless</p></li>
+<li><p>Add AssociationName to AWS::SSM::Association</p></li>
+<li><p>Update S3::Bucket with 20180123 property changes</p></li>
+<li><p>Add DBSubnetGroupName to AWS::RDS::DBSubnetGroup</p></li>
+<li><p>Add ReservedConcurrentExecutions to AWS:Lambda:Function</p></li>
+<li><p>Add StreamEncryption to AWS::Kinesis::Stream</p></li>
+<li><p>Add LambdaOutput to KinesisAnalytics ApplicationOutput property</p></li>
+<li><p>Update required fields in IoT TopicRule DynamoDBAction</p></li>
+<li><p>Add validator for InstanceTenancy in EC2::VPC</p></li>
+<li><p>Add CreditSpecification and ElasticGpuSpecifications to EC2::Instance</p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h2>2.1.2 (2017*12*03)<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>In SpotFleet::SpotFleetRequestConfigData SpotPrice is optional</p></li>
+<li><p>Add RoutingConfig to AWS::Lambda::Alias</p></li>
+<li><p>Update AWS::CodeDeploy</p></li>
+<li><p>Add CodeDeployLambdaAliasUpdate to UpdatePolicy</p></li>
+<li><p>Add AWS::GuardDuty</p></li>
+<li><p>Add AWS::Cloud9</p></li>
+<li><p>Add initial python resource spec generator</p></li>
+<li><p>Update AWS::CodeBuild::Project to 20171201 changes</p></li>
+<li><p>Change AWS::Batch::ComputeResources.Tags type to dict (#867)</p></li>
+<li><p>Update README for YAML template (#925)</p></li>
+<li><p>Typo fix in examples/ElastiCacheRedis.py (#926)</p></li>
+<li><p>Adds Fargate support to ECS types (#929)</p></li>
+<li><p>Fix SSM NotificationConfig validator type (#930)</p></li>
+<li><p>Fix SQS::Queue validation in the case of no QueueName specified (#931)</p></li>
+</ul>
+</div>
+<div class="section" id="id25">
+<h2>2.1.1 (2017*11*26)<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add support for VPCOptions in ElasticSearch (#862)</p></li>
+<li><p>Add Description property for security group ingress and egress (#910)</p></li>
+<li><p>Add QueryLoggingConfig to Route53::HostedZone</p></li>
+<li><p>Add SourceRegion to RDS::DBInstance</p></li>
+<li><p>Add RootVolumeSize and caleDownBehavior to EMR::Cluster</p></li>
+<li><p>Add new properties to ElastiCache::ReplicationGroup</p></li>
+<li><p>Add LinuxParameters to ECS::TaskDefinition ContainerDefinitions</p></li>
+<li><p>Add LifecyclePolicy to ECR::Repository</p></li>
+<li><p>Add ScheduledActions to ApplicationAutoScaling::ScalableTarget</p></li>
+<li><p>Add new properties into ApiGateway</p></li>
+</ul>
+</div>
+<div class="section" id="id26">
+<h2>2.1.0 (2017*11*19)<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Output yaml (to_yaml) using cfn_flip (Fixes #567)</p></li>
+<li><p>Allow AWSHelperFn for CodeCommit Trigger Event(s) (#869)</p></li>
+<li><p>Adding the AWS::Glue resources (#872)</p></li>
+<li><p>Use a list for Serverless::Function Tags (#873)</p></li>
+<li><p>Support ProcessingConfiguration for Elasticsearch and Redshift (#876)</p></li>
+<li><p>Fixes incorrect class definition. (#877)</p></li>
+<li><p>Add TargetGroupInfo to DeploymentGroup #884 (#895)</p></li>
+<li><p>Reverting #810 as AWS has changed the casing again (#896)</p></li>
+<li><p>Add EMR Cluster MasterInstanceFleet and CoreInstanceFleet properties (#897)</p></li>
+<li><p>Add EMR Cluster CustomAmiId (#888) (#898)</p></li>
+<li><p>Add SecurityGroupRule Description property (#885) (#899)</p></li>
+<li><p>Add support for tags in AWS::KMS::Key. (#900)</p></li>
+<li><p>Adding OriginReadTimeout aka OriginResponseTimeout to cloudfront origin settings (#901)</p></li>
+<li><p>Added property for OriginKeepaliveTimeout</p></li>
+<li><p>Add CloudFrontOriginAccessIdentity type (#903)</p></li>
+<li><p>Added support for VpnTunnelOptionsSpecifications (#904)</p></li>
+<li><p>Allow ref on Parameter (#905)</p></li>
+<li><p>Adds Tags to Cloudfront Distribution (#906)</p></li>
+<li><p>CloudFront: add IPV6Enabled property for DistributionConfig (#908)</p></li>
+<li><p>Add OptionVersion to RDS:OptionConfigurations</p></li>
+<li><p>Add Tags to OpsWorks Layer and Stack</p></li>
+<li><p>Add LifecycleHookSpecification in AutoScalingGroup</p></li>
+<li><p>Add AmazonSideAsn to EC2::VPNGateway</p></li>
+<li><p>Add StateMachineName to StepFunctions::StateMachine</p></li>
+<li><p>Change KMS::Key to accept a standard Tags</p></li>
+<li><p>Add LambdaFunctionAssociations to CloudFront CacheBehaviors</p></li>
+<li><p>Add ResourceName to elasticbeanstalk OptionSettings</p></li>
+<li><p>Add AnalyticsConfigurations and InventoryConfigurations to S3::Bucket</p></li>
+<li><p>Add RequestValidatorId and OperationName to ApiGateway::Method</p></li>
+<li><p>Add deprecation warning for StageName in ApiGateway StageDescription</p></li>
+<li><p>Add AWS::CloudFront::StreamingDistribution</p></li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h2>2.0.2 (2017*10*23)<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Set EC2 BlockDeviceMapping NoDevice property to type dict (#866)</p></li>
+</ul>
+</div>
+<div class="section" id="id28">
+<h2>2.0.1 (2017*10*21)<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Allow s3.Bucket AccessControl to be an AWSHelperFn</p></li>
+<li><p>Add AWS::ElasticLoadBalancingV2::ListenerCertificate</p></li>
+<li><p>Add serverless FunctionName and change how Tags are implemented</p></li>
+<li><p>Make AdjustmentType an optional property of ScalingPolicy as it is not used/supported for target (#849)</p></li>
+<li><p>Add maintenance window for SSM (#851)</p></li>
+<li><p>Add Tags, Tracing, KmsKeyArn, DLQ to serverless(SAM) (#853)</p></li>
+<li><p>Add new AWS::SSM resources (#854)</p></li>
+<li><p>EC2 NoDevice should be type boolean not dict (#858)</p></li>
+<li><p>Fixes RecordColumns cardinality for InputSchema and ReferenceSchema (#859)</p></li>
+<li><p>Make AWS::Batch::JobQueue::JobQueueName optional (#860)</p></li>
+<li><p>Fixes ApplicationOutput/Output cardinality (#863)</p></li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h2>2.0.0 (2017*10*07)<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Note: the s3.Bucket change (#844) <em>may</em> cause a breaking change for non*named arguments.</p></li>
+<li><p>Add DefinitionBody to serverless API (#822)</p></li>
+<li><p>Adding kinesis stream source to firehose (#823)</p></li>
+<li><p>Add <cite>Event::Rule::Target::EcsParameters</cite> (#824)</p></li>
+<li><p>Add S3 Transfer Acceleration to AWS::S3::Bucket (#833)</p></li>
+<li><p>Add AvailabilityZone property to TargetDescription (#834)</p></li>
+<li><p>Add Tags to NATGateway (#835)</p></li>
+<li><p>Add ResourceLifecycleConfig to ElasticBeanstalk (#836)</p></li>
+<li><p>Add AWS::Athena::NamedQuery (#837)</p></li>
+<li><p>Added platformArn to Environment and ConfigurationTemplate (#839)</p></li>
+<li><p>Events target (fixes #830) (#840)</p></li>
+<li><p>Refactor s3.Bucket to remove custom __init__() and add tests (#844)</p></li>
+<li><p>Be more explicit on the use of the Tags object for Tags (#845)</p></li>
+</ul>
+</div>
+<div class="section" id="id30">
+<h2>1.9.6 (2017*09*24)<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Added missing EU_WEST_2 constants. (#776)</p></li>
+<li><p>Override object validation (#780)</p></li>
+<li><p>Update PyPI Information (#785)</p></li>
+<li><p>Adding IPv6 changes to AWS::EC2::Subnet (#786)</p></li>
+<li><p>NetworkACL Protocl Constants (#787)</p></li>
+<li><p>Add support for EFS encryption (#789)</p></li>
+<li><p>Add AWS::ApiGateway::GatewayResponse (#790)</p></li>
+<li><p>Add support for aurora*postgresql as a valid DB engine (#791)</p></li>
+<li><p>adding sqs server side encryption (#793)</p></li>
+<li><p>Support new code deploy options (#794)</p></li>
+<li><p>Add AWS Batch Support (#796)</p></li>
+<li><p>VPC expansion support (#797)</p></li>
+<li><p>Add NLB Functionality (#806)</p></li>
+<li><p>Fix typos in examples/DynamoDB_Table.py (#807)</p></li>
+<li><p>Revert “Accept Join type as parameter default value as it returns a string (#752)” (#808)</p></li>
+<li><p>Change Cognito UserPool SchemaAttribute required value to boolean (#809)</p></li>
+<li><p>Updating case of ‘AssignIPv6AddressOnCreation’ (#810)</p></li>
+<li><p>Fix spelling error  to  in RedshiftVPC example (#811)</p></li>
+<li><p>EFS example: SecurityGroupRule can’t be referred to as a Ref (#813)</p></li>
+<li><p>Update README.rst with current supported resources (#814)</p></li>
+<li><p>Add CloudTrail EventSelectors (#815)</p></li>
+<li><p>Add DAX support (#818)</p></li>
+<li><p>Add KinesisAnalytics support (#819)</p></li>
+<li><p>Add new ApiGateway resources (#820)</p></li>
+<li><p>Add autoscaling example for http requests that closes #630 (#821)</p></li>
+<li><p>Add new S3 Lifecycle Rule properties</p></li>
+<li><p>Add IoT DynamoDBv2Action and update DynamoDBAction properties</p></li>
+<li><p>Add EventSourceToken to Lambda::Permission</p></li>
+<li><p>Add new pseudo parameters</p></li>
+<li><p>Add DocumentationVersion to AWS::ApiGateway::Stage</p></li>
+<li><p>Add S3 Bucket MetricsConfiguration and fix TagFilter spelling</p></li>
+<li><p>Add TargetType to ELBv2::TargetGroup</p></li>
+<li><p>Add TargetTrackingConfiguration to AutoScaling::ScalingPolicy</p></li>
+<li><p>Add ReplaceUnhealthyInstances and Type to SpotFleetRequestConfigData</p></li>
+<li><p>Add ExtendedS3DestinationConfiguration to firehose DeliveryStream</p></li>
+<li><p>Add AWS::EC2::NetworkInterfacePermission</p></li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h2>1.9.5 (2017*07*26)<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add support for latest Cloudwatch alarms properties (#694)</p></li>
+<li><p>Raise ValueError for Outputs and Mappings * Fix Issue #732 (#733)</p></li>
+<li><p>Add AWS::EMR::SecurityConfiguration support (#738)</p></li>
+<li><p>Create CODE_OF_CONDUCT.md (#740)</p></li>
+<li><p>Added UsagePlans to API Gateway example (#741)</p></li>
+<li><p>EMR AutoScaling Complex Validation and Introduction of an ignore validator type (#743)</p></li>
+<li><p>Add PrivilegedMode option to CodeBuild Environments (#744)</p></li>
+<li><p>EFS DependsOn Ref to object fix (#746)</p></li>
+<li><p>README * add syntax highlighting (#747)</p></li>
+<li><p>Make handling of DependsOn more pythonic (#748)</p></li>
+<li><p>Accept Join type as parameter default value as it returns a string (#752)</p></li>
+<li><p>AWS SAM support (#754)</p></li>
+<li><p>Fixed UsagePlan example to proper Ref (#755)</p></li>
+<li><p>Fix cognito StringAttributeConstraints property names (Fixes #756)</p></li>
+<li><p>Add ‘SourceAuth’ property to CodeBuild Source (#758)</p></li>
+<li><p>Make it easier to get at hidden attributes (Fixes #760)</p></li>
+<li><p>Size/IOPS should be positive_integers (#761)</p></li>
+<li><p>Check that FIFO Queues end with .fifo (#757)</p></li>
+<li><p>Add AWS::CloudWatch::Dashboard (Fixes #763)</p></li>
+<li><p>Ulimit’s HardLimit and SoftLimit validator change (#764)</p></li>
+<li><p>Adding EgressOnlyInternetGateway to EC2::Route (#765)</p></li>
+<li><p>Allow passing in a dict into DashboardBody (#767)</p></li>
+<li><p>Handle SQS QueueName using an AWSHelperFn (Fixes #773)</p></li>
+<li><p>LifecycleHook NotificationTargetARN and RoleARN are now optional</p></li>
+<li><p>Remove RoleArn from Events::Rule and add to Target property</p></li>
+<li><p>Add TracingConfig property to AWS::Lambda::Function</p></li>
+<li><p>Add Tags to some RedShift resources</p></li>
+<li><p>Add AWS::ApiGateway::DomainName</p></li>
+<li><p>Add AWS::EC2::EgressOnlyInternetGateway</p></li>
+<li><p>Add AWS::EMR::InstanceFleetConfig</p></li>
+<li><p>Add BinaryMediaTypes to ApiGateway::RestApi</p></li>
+<li><p>Add TargetTrackingScalingPolicyConfiguration</p></li>
+<li><p>Add TrailName to CloudTrail::Trail</p></li>
+<li><p>Add AlarmConfiguration and TriggerConfigurations</p></li>
+<li><p>Add Tags and TimeToLiveSpecification to DynamoDB::Table</p></li>
+<li><p>Add RetentionPeriodHours to Kinesis::Stream</p></li>
+<li><p>Add ReplicationSourceIdentifier to RDS::DBCluster</p></li>
+<li><p>Add LoggingProperties to Redshift::Cluster</p></li>
+<li><p>Add AWS Database Migration Service (DMS) support</p></li>
+<li><p>Add test target to Makefile</p></li>
+<li><p>Make it easier to download the latest CF resource spec</p></li>
+<li><dl class="simple">
+<dt>Added and reverted out of this release:</dt><dd><ul>
+<li><p>Fix pycodestyle issue in tests/test_yaml.py</p></li>
+<li><p>Output yaml (to_yaml) using cfn_flip (Fixes #567)</p></li>
+<li><p>Special case If during parameter checking (Fixes #772)</p></li>
+<li><p>Raise TypeError when a scaler AWSHelperFn is used in a list context (#751)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h2>1.9.4 (2017*06*04)<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix typo in S3_Bucket.py example (#696)</p></li>
+<li><p>Added .Ref &amp; .GetAtt helper methods (#697)</p></li>
+<li><p>Add Pseudo Parameter Ref objects (#698)</p></li>
+<li><p>Fix NamespaceType typo in codebuild::Artifacts() (fixes #701)</p></li>
+<li><p>Add IpAddressType property to elbv2. (#703)</p></li>
+<li><p>Add new AWS::Lambda::Function Tags support (#705)</p></li>
+<li><p>Added ECS PlacementConstraints, PlacementStrategy, and ServiceName (#706)</p></li>
+<li><p>Add missing CidrIpv6 property to securityrule. (#710)</p></li>
+<li><p>Add missing properties to various objects in ec2.py (#711)</p></li>
+<li><p>logs.LogGroup#RetentionInDays is strictly defined list (#712)</p></li>
+<li><p>Add ManagedPolicyName to AWS::IAM::ManagedPolicy (Fixes #714)</p></li>
+<li><p>Add better validations for Parameter Default types (Fixes #717)</p></li>
+<li><p>Add AWS::Cognito (fixes #720)</p></li>
+<li><p>Add required attribute, JobFlowId, to EMR::InstanceGroupConfig (#722)</p></li>
+<li><p>Add WAFRegional support (#723)</p></li>
+<li><p>fix for ElastiCacheRedis.py example to use awacs (#725)</p></li>
+<li><p>Add EMR autoscaling (#729)</p></li>
+<li><p>Add SshUsername to AWS::OpsWorks::UserProfile</p></li>
+<li><p>Add PlacementConstraints to AWS::ECS::TaskDefinition</p></li>
+<li><p>Add MaximumExecutionFrequency to Config SourceDetails</p></li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h2>1.9.3 (2017*04*13)<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix pycodestyle by using an explicit exception type</p></li>
+<li><p>Add more details to pycodestyle errors for travis runs</p></li>
+<li><p>Fix validator function exception test</p></li>
+<li><p>Remove limit check on conditions * Fixes #657</p></li>
+<li><p>Allow valid value for TargetGroup HealthCheckPort (#659)</p></li>
+<li><p>Added step functions and basic tests (#661)</p></li>
+<li><p>Adding example for CloudTrail (from <a class="reference external" href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws*resource*cloudtrail*trail.html">http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws*resource*cloudtrail*trail.html</a>) (#667)</p></li>
+<li><p>Fix ApiGateway.py sample (#666)</p></li>
+<li><p>Update comment on type checking</p></li>
+<li><p>Added missing props to ec2.NetworkInterfaces (#669) (#670)</p></li>
+<li><p>Add WAF Common Attacks Sample (#675)</p></li>
+<li><p>Updated constants with new instance types (#674)</p></li>
+<li><p>SSM Targets * fix spelling mistake (Value =&gt; Values) (#673)</p></li>
+<li><p>Do json validation on ApiGateway::Model Schema (Fix #679) (#681)</p></li>
+<li><p>SQS: Add FifoQueue and ContentBasedDeduplication (#687)</p></li>
+<li><p>VPCPeeringConnection: add PeerOwnerId &amp; PeerRoleArn (#688)</p></li>
+<li><p>IAM: Add InstanceProfileName to InstanceProfile (#689)</p></li>
+<li><p>Add ApiGateway UsagePlanKey resource</p></li>
+<li><p>Add DeadLetterConfig property to Lambda::Function</p></li>
+<li><p>Add new subproperties to route53 and redshift (#690)</p></li>
+<li><p>Route53: ChildHealthChecks is a list of strings (#690)</p></li>
+<li><p>Fix typo in S3_Bucket_With_Versioning_And_Lifecycle_Rules.py (#693)</p></li>
+<li><p>Allow a dict to be passed in to initalize Tags (#692)</p></li>
+<li><p>Add SSM::Parameter</p></li>
+<li><p>Update autoscaling example to remove rebinding (#695)</p></li>
+</ul>
+</div>
+<div class="section" id="id34">
+<h2>1.9.2 (2017*01*29)<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Extra template validation (#635)</p></li>
+<li><p>Update ECS to Jan 17, 2017 release (#642)</p></li>
+<li><p>Add Timezone property to DBInstance (#643)</p></li>
+<li><p>Test Python 3.6 (#644)</p></li>
+<li><p>Adding RDS engine support for oracle*se2 (#646)</p></li>
+<li><p>Correct required in ecs.Service (#645)</p></li>
+<li><p>Add Separator property to IoT Firehose Action</p></li>
+<li><p>Add Fn::Split function (#647)</p></li>
+<li><p>Added to_dict() method to troposphere.Template (#651)</p></li>
+<li><p>Allow use of AWSHelperFn for IOPS (#652)</p></li>
+<li><p>Allow HelperFN w/ autoscaling policies (#654)</p></li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h2>1.9.1 (2017*01*03)<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Improve readability of AssumeRolePolicyDocument attribute (#591)</p></li>
+<li><p>Add Environment to Lambda Function (#616)</p></li>
+<li><p>Adding DataSources to OpsWorks App and RdsDbInstances to OpsWorks Stack (#621)</p></li>
+<li><p>Added SNS::Subscription resource (SubscriptionResource) (#622)</p></li>
+<li><p>Added CodeBuild Project resource and a CodeBuild example (#624)</p></li>
+<li><p>Add back support for Python 2.6 (#626)</p></li>
+<li><p>Fixed missing add_resource in example Cloudwatch rule (#629)</p></li>
+<li><p>Create new property Environment for aws lambda Function (#631)</p></li>
+<li><p>Add KmsKeyArn to Lambda Function</p></li>
+<li><p>Add CopyTagsToSnapshot to RDS::DBInstance</p></li>
+<li><p>Fix pycodestyle issues with examples/Lambda.py</p></li>
+<li><p>Add AWS::SSM::Association</p></li>
+<li><p>Add AWS::EC2::SubnetCidrBlock and AWS::EC2::VPCCidrBlock</p></li>
+<li><p>Add mutually_exclusive validator</p></li>
+<li><p>Add DocumentType to AWS::SSM::Document</p></li>
+<li><p>Add OpsWorks Resources: UserProfile and Volume</p></li>
+<li><p>Update opsworks per 2016*11*22 changes</p></li>
+<li><p>Allow both dict and string for opswork CustomJson</p></li>
+<li><p>Add IPv6 support from 2016*12*01 update</p></li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h2>1.9.0 (2016*11*15)<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Note: the dynamodb change below may cause backwards compatibility issues.
+There have been deprecation warnings for a while.</p></li>
+<li><p>Replace dynamodb module with dynamodb2 (#564)</p></li>
+<li><p>Add CodeCommit as a supported AWS resource type</p></li>
+<li><p>Add update of github Releases page to RELEASE doc</p></li>
+<li><p>Update elasticache for 2016*10*12 changes (#592)</p></li>
+<li><p>Support for S3 Lifecycle Rule property NoncurrentVersionTransitions (#596)</p></li>
+<li><p>Include resource title in required attr exception (#597)</p></li>
+<li><p>Added Placement class for the Placement property in LaunchSpecifications. (#598)</p></li>
+<li><p>Add EFS example (#601)</p></li>
+<li><p>Add support to old mysql db engine (#602)</p></li>
+<li><p>Fix typo in Example Allowed Values (#603)</p></li>
+<li><p>Remove <cite>title</cite> validation. Fixes #428 (#605)</p></li>
+<li><p>Add support for conditions in cfn2py script (#606)</p></li>
+<li><p>Added MongoDB default port to constants (#608)</p></li>
+<li><p>Add HttpVersion prop to DistributionConfig (CloudFront HTTP/2 Support) (#609)</p></li>
+<li><p>Added missing QueryStringCacheKeys property to CloudFront ForwardedValues (#612)</p></li>
+<li><p>Add a validator for ELB names (#615)</p></li>
+</ul>
+</div>
+<div class="section" id="id37">
+<h2>1.8.2 (2016*10*08)<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add SpotPrice to SpotFleet LaunchSpecifications</p></li>
+<li><p>Add new properties to ECS (Clustername to Cluster and Family to TaskDefinition)</p></li>
+<li><p>Add Alias object to KMS (fixes #568)</p></li>
+<li><p>Added cross*stack references (#569)</p></li>
+<li><p>Handle lambda =&gt; awslambda mapping in cfn2py (#573)</p></li>
+<li><p>Add support for Tags to Certificate Manager Certificates (#574)</p></li>
+<li><p>Adding enhanced monitoring to rds.DBInstance (#575)</p></li>
+<li><p>Add support for LogGroupName in Logs::LogGroup (#576)</p></li>
+<li><p>Update Export param (#579)</p></li>
+<li><p>Add support for <cite>Fn::Sub</cite> (#582)</p></li>
+<li><p>RDS DBInstance Engine required even when DBSnapshotIdentifier is set (#583)</p></li>
+<li><p>Resource updates for 2016*10*06 changes (Fixes #584)</p></li>
+<li><p>Add AWS::ApiGateway::UsagePlan (fixes #585)</p></li>
+<li><p>Add AWS::CodeCommit::Repository (fixes #586)</p></li>
+<li><p>Provide better type checking for values in from_dict (#587)</p></li>
+<li><p>Allow HelperFn in UpdatePolicy for ASG (#588)</p></li>
+<li><p>Fixed from_dict case where you have a list of non BaseAWSObjects (#589)</p></li>
+</ul>
+</div>
+<div class="section" id="id38">
+<h2>1.8.1 (2016*09*12)<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add TargetGroupArn and fix ContainerPort (#549)</p></li>
+<li><p>Update ApiGateway resources (#550)</p></li>
+<li><p>Add support for AutoScalingCreationPolicy (#552)</p></li>
+<li><p>Change param type for resource: RestAPI (#553)</p></li>
+<li><p>Add support for IAM Roles in ECS Task Definitions (#556)</p></li>
+<li><p>Allow Tags on AWS::CloudFormation::Stack (#557)</p></li>
+<li><p>Added support for protocol in container definition PortMapping property. (#558)</p></li>
+<li><p>Add Tags prop to Kinesis::Stream (#565)</p></li>
+<li><p>Add a sample ECS Cluster template (#559)</p></li>
+<li><p>Add support for ElasticsearchVersion in Elasticsearch Domain (#560)</p></li>
+<li><p>WAF SizeContraint needs to be an AWSProperty (Fixes #561)</p></li>
+<li><p>Add Tags prop to Kinesis::Stream (#565)</p></li>
+</ul>
+</div>
+<div class="section" id="id39">
+<h2>1.8.0 (2016*08*15)<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Support “UserName” property for AWS::IAM::User #529</p></li>
+<li><p>Remove double S from S3ObjectVersion (fixes #530) (#531)</p></li>
+<li><p>Fix TemplateGenerator import logic. (#533)</p></li>
+<li><p>Add Name attributes for IAM groups and roles (#535)</p></li>
+<li><p>Automatically check if zip_file exceeds 4096 chars #537</p></li>
+<li><p>Add AWS Certificate Manager (#538)</p></li>
+<li><p>Add Application Auto Scaling (#539)</p></li>
+<li><p>CloudFront updates (Aug 9, 2016) (#540)</p></li>
+<li><p>Add PerformanceMode to FileSystem resource (#541)</p></li>
+<li><p>Add AWS Internet of Things (#542)</p></li>
+<li><p>Extend Template constructor. (#543)</p></li>
+<li><p>Add application loadbalancer objects and properties (#544)</p></li>
+<li><p>Improve check_zip_file to calculate a minimum length (#548)</p></li>
+</ul>
+</div>
+<div class="section" id="id40">
+<h2>1.7.0 (2016*07*07)<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Convert fake AWSHelperFns into AWSProperties (#478)</p></li>
+<li><p>cfn script: allow update (#484)</p></li>
+<li><p>Validate the template against AWS before stack creation (#485)</p></li>
+<li><p>Fix capitalization in README (#487)</p></li>
+<li><p>Remove duplicate waf FieldToMatch class (fixes #489)</p></li>
+<li><p>Tune validation logic and test cases for S3 bucket names (#486)</p></li>
+<li><p>waf XssMatchTuple should be an AWSProperty (Fixes #498)</p></li>
+<li><p>Allow setting a different region for S3 upload (#491)</p></li>
+<li><p>fix attribute for ApiKey (Enable -&gt; Enabled) (#492)</p></li>
+<li><p>Invoke join correctly (#493)</p></li>
+<li><p>EMR: fix EBS configuration (#497)</p></li>
+<li><p>EMR: Action on Failure Fix (CONTINUE_AND_WAIT*&gt;CANCEL_AND_WAIT) (#501)</p></li>
+<li><p>Rewritten the helper to be more flexible (#502)</p></li>
+<li><p>Added support for Kinesis Firehose (#505)</p></li>
+<li><p>Add support for VPC Flow Logs (#507)</p></li>
+<li><p>Syntax highlighting for readme python sample (#508)</p></li>
+<li><p>Added Name property to Kinesis streams (#510)</p></li>
+<li><p>Availability zones and EC2 instance type (#512)</p></li>
+<li><p>Add <cite>AutoScalingReplacingUpdate</cite> to <cite>UpdatePolicy</cite> (#513)</p></li>
+<li><p>Removed validation for DBSubnetGroupName when creating a read replica with SourceDBInstanceIdentifier (#515)</p></li>
+<li><p>EMR configurations values: also allow AWS helper functions (#516)</p></li>
+<li><p>Fix AssociationParameters Value type to list of strings (#518)</p></li>
+<li><p>Add DependsOn to Deployment and remove Enabled from StageKey (#519)</p></li>
+<li><p>Update fields in apigateway StageDescription (#521)</p></li>
+<li><p>Fix rename pep8*&gt;pycodestyle and bump to fixed pyflakes (#522)</p></li>
+<li><p>Allows MultiAZ=false with AvailabilityZone in rds (#524)</p></li>
+<li><p>Do not require Status as a param in iam.AccessKey (#525)</p></li>
+<li><p>Fix badges in README</p></li>
+</ul>
+</div>
+<div class="section" id="id41">
+<h2>1.6.0 (2016*05*04)<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Remove unnecessary AWSHelperFn from props</p></li>
+<li><p>ReplicationConfigurationRules Destination is now an object (#380)</p></li>
+<li><p>Add WAF SizeConstraintSet and XssMatchSet</p></li>
+<li><p>Logs SubscriptionFilter (#413)</p></li>
+<li><p>Elasticsearch support (#415)</p></li>
+<li><p>Fixed ConfigSnapshotDeliveryProperties type (#420)</p></li>
+<li><p>Adding support for EMR resources (#421)</p></li>
+<li><p>Fix <cite>ecs.TaskDefinition.Volumes</cite> that was incorrectly flagged as required (#422)</p></li>
+<li><p>AWS::ECR test example (#423)</p></li>
+<li><p>Add cloudfront hostedzoneid for route53 (#427)</p></li>
+<li><p>Typo in variable name (431)</p></li>
+<li><p>ScalingAdjustment is an integer (#432)</p></li>
+<li><p>Add Compress to CloudFront (#433)</p></li>
+<li><p>Added missing S3OriginConfig parameter(#437)</p></li>
+<li><p>Allow both GetAtt and a basestring (#440)</p></li>
+<li><p>Add VpcConfig to AWS::Lambda::Function (#442)</p></li>
+<li><p>Add Version Resource to awslambda (#443)</p></li>
+<li><p>Add Alias Resource to awslambda (#444)</p></li>
+<li><p>Ignore If expression during validation of ASG (#446)</p></li>
+<li><p>Add test and tweak fix for ASG MaxSize If fix (#446)</p></li>
+<li><p>Provide Valid Lambda Function Memory Values for use in Parameters (#449)</p></li>
+<li><p>Add FunctionName to Lambda::Function (#452)</p></li>
+<li><p>Add support for EBS volume configuration in EMR resources (#453)</p></li>
+<li><p>Add elasticsearch instance type constants (#454)</p></li>
+<li><p>DomainName isn’t a required parameter (#457)</p></li>
+<li><p>Create Documentation To Help Contributors (#458)</p></li>
+<li><p>Move Groups to property, add policy template version (#460)</p></li>
+<li><p>Fix Elasticsarch Domain object naming and add backward compatibility (#461)</p></li>
+<li><p>EC2 update FromPort, ToPort and Egress as optional (#463)</p></li>
+<li><p>ApiGateway Resources (#466)</p></li>
+<li><p>Added CloudWatch Events support (#467)</p></li>
+<li><p>Import JSON Templates (#468)</p></li>
+<li><p>Fix config Source object to take a list of SourceDetails (#469)</p></li>
+<li><p>Update Contribute Document to Use Requirements.txt (#470)</p></li>
+<li><p>Update to Apr 25, 2016 release (#471)</p></li>
+<li><p>Implement LifecycleRule Transitions property (#472)</p></li>
+<li><p>Better AWSHelperFn support in template generator (#473)</p></li>
+<li><p>Fix Bucket AccessControl to allow Ref (#475)</p></li>
+<li><p>Fix baseclass for AWS::Logs::Destination (#481)</p></li>
+<li><p>Add test for AWS::Logs::Destination (#482)</p></li>
+</ul>
+</div>
+<div class="section" id="id42">
+<h2>1.5.0 (2016*03*01)<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add MariaDB to list of RDS engines [GH*368]</p></li>
+<li><p>Add ap*northeast [GH*373]</p></li>
+<li><p>Add T2 Nano [GH*374]</p></li>
+<li><p>capability support for cfn [GH*375]</p></li>
+<li><p>Update to resource list in documentation [GH*383]</p></li>
+<li><p>More info from validator function errors [GH*385]</p></li>
+<li><p>Add testing for python 3.5 [GH*388]</p></li>
+<li><p>Extended title validation [GH*389]</p></li>
+<li><p>EC2 NAT Gateway [GH*394]</p></li>
+<li><p>Add AWS::ECR::Repository [GH*395]</p></li>
+<li><p>Add KmsKeyId and StorageEncrypted to DBCluster [GH*396]</p></li>
+<li><p>Add awacs soft dependency [GH*397]</p></li>
+<li><p>New dynamodb2 module to replace dynamodb for consistent interface [GH*398]</p></li>
+<li><p>Add IsMultiRegionTrail support [GH*399]</p></li>
+<li><p>Add IncludeGlobalResourceTypes to RecordingGroup [GH*400]</p></li>
+<li><p>Capitalize examples [GH*404]</p></li>
+<li><p>use location constants for bucket creation in cfn [GH*409]</p></li>
+</ul>
+</div>
+<div class="section" id="id43">
+<h2>1.4.0 (2016*01*01)<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add RDS Aurora support [GH*335]</p></li>
+<li><p>Change DeploymentGroup Ec2TagFilters to list [GH*337]</p></li>
+<li><p>Correct EC2 SpotFleet LaunchSpecifications [GH*338]</p></li>
+<li><p>RDS::DBCluster change AvailabilityZone to AvailabilityZones [GH*341]</p></li>
+<li><p>ECS LoadBalancerName property is a string [GH*342]</p></li>
+<li><p>CodeDeploy S3Location Version property is not a default requirement [GH*345]</p></li>
+<li><p>Add AutoEnableIO to AWS::EC2::Volume</p></li>
+<li><p>Only discard Properties in JSONrepr [GH*354]</p></li>
+<li><p>CodeDeploy added ApplicationName [GH*357]</p></li>
+<li><p>CodeDeploy DeploymentGroupName property missing [GH*358]</p></li>
+<li><p>Add in cloudfront properties for max, default [GH*360]</p></li>
+<li><p>Allow RDS iops to be 0 [GH*361]</p></li>
+<li><p>Add CodePipline support [GH*362]</p></li>
+<li><p>Implemented CloudFormation changes from Dec 3 and Dec 28 [GH*366]</p></li>
+<li><p>Add AWS::Config, AWS::KMS, AWS::SSM</p></li>
+</ul>
+</div>
+<div class="section" id="id44">
+<h2>1.3.0 (2015*10*21)<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Add new resources from 2015*10*01 CloudFormation release:</dt><dd><ul>
+<li><p>AWS::CodeDeploy</p></li>
+<li><p>AWS::DirectoryService::SimpleAD</p></li>
+<li><p>AWS::EC2::PlacementGroup and AWS::EC2::SpotFleet</p></li>
+<li><p>AWS::Lambda::EventSourceMapping and AWS::Lambda::Permission</p></li>
+<li><p>AWS::Logs::SubscriptionFilter</p></li>
+<li><p>AWS::RDS::DBCluster and AWS::RDS::DBClusterParameter</p></li>
+<li><p>AWS::WorkSpaces::Workspace</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Add updates to these resources from 2015*10*01 CloudFormation release:</dt><dd><ul>
+<li><p>AWS::ElastiCache::ReplicationGroup</p></li>
+<li><p>AWS::OpsWorks::Stack</p></li>
+<li><p>AWS::OpsWorks::App</p></li>
+<li><p>AWS::S3::Bucket</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Add ElastiCache (Redis) Example [ GH*329]</p></li>
+<li><p>RDS: Added postgresql*license [GH*324]</p></li>
+<li><p>tail: only add unseen events [GH*327]</p></li>
+<li><p>Make Ref() work with datapipeline.ObjectField.RefValue [GH*328]</p></li>
+<li><p>Fix DeploymentGroup resource_type (AWS::CodeDeploy::DeploymentGroup) [GH*333]</p></li>
+<li><p>Add concatenation operator function __add__ for Tags [GH*334]</p></li>
+</ul>
+</div>
+<div class="section" id="id45">
+<h2>1.2.2 (2015*09*15)<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Give more info about type errors [GH*312]</p></li>
+<li><p>Move <cite>tail</cite> within the troposphere library. This lets external libraries
+leverage this function [GH*315]</p></li>
+<li><p>Improve opsworks validation [GH*319]</p></li>
+<li><p>Fix RDS validation with conditional parameters [GH*320]</p></li>
+</ul>
+</div>
+<div class="section" id="id46">
+<h2>1.2.1 (2015*09*07)<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Bugfix for RDS Ref/GetAtt issue [GH*310]</p></li>
+</ul>
+</div>
+<div class="section" id="id47">
+<h2>1.2.0 (2015*09*04)<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add support for EFS</p></li>
+<li><p>Elasticache: only validate az choices if azs is a list [GH*292]</p></li>
+<li><p>Add from_dict function to BaseAWSObject [GH*294]</p></li>
+<li><p>IAM: Path is optional for Role and InstanceProfile [GH*295]</p></li>
+<li><p>Validate parameter options based on Type [GH*296]</p></li>
+<li><p>RDS: Add more specific validators to DBInstance [GH*297]</p></li>
+<li><p>Add constants for the parameter types [GH*300]</p></li>
+<li><p>Add lambda ZipFile property [GH*301]</p></li>
+<li><p>Adds VPCEndpoint resource type [GH*304]</p></li>
+<li><p>Supports tags in ElasticBeanstalk environments [GH*308]</p></li>
+<li><p>Move cloudformation attribute setting to __setattr__ [GH*309]</p></li>
+</ul>
+</div>
+<div class="section" id="id48">
+<h2>1.1.2 (2015*07*23)<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Clarify the license is a [BSD 2*Clause license](<a class="reference external" href="http://opensource.org/licenses/BSD*2*Clause">http://opensource.org/licenses/BSD*2*Clause</a>)</p></li>
+<li><p>Add FindInMap type check for AutoScalingGroup validation of group sizes [GH*285]</p></li>
+<li><p>Implement the template Metadata section [GH*286]</p></li>
+</ul>
+</div>
+<div class="section" id="id49">
+<h2>1.1.1 (2015*07*12)<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Rename lambda*&gt;awslambda [GH*268]</p></li>
+<li><p>Add t2 large instance type [GH*269]</p></li>
+<li><p>IAM: status required and managedpolicyarns [GH*272]</p></li>
+<li><p>Fix wrong prop name in rds.OptionGroup OptionGroupConfigurations*&gt;OptionConfigurations [GH*274]</p></li>
+<li><p>Add CloudFormation CustomResource [GH*278]</p></li>
+<li><p>Add rds snapshot on delete example [GH*280]</p></li>
+<li><p>Unable to pass Cluster name as String [GH*281]</p></li>
+<li><p>Fix unable to set StringValue on ObjectField in DataPipeline [GH*283]</p></li>
+</ul>
+</div>
+<div class="section" id="id50">
+<h2>1.1.0 (2015*06*15)<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>added AWS::CloudFormation::Stack NotificationARNs property [GH*243]</p></li>
+<li><p>Add additional import for PrivateIpAddressSpecification [GH*247]</p></li>
+<li><p>Add true s3 bucket name validator [GH*249]</p></li>
+<li><p>Replace strict <cite>int</cite> comparison by flexible <cite>troposphere.validators.integer</cite> [GH*251]</p></li>
+<li><p>Add validation for AZMode property on CacheCluster objects [GH*252]</p></li>
+<li><p>Fixing Opsworks Naming (ThresholdWaitTime -&gt; ThresholdsWaitTime) [GH*253]</p></li>
+<li><p>Adding AutoScalingType to OpsWorks Instance [GH*255]</p></li>
+<li><p>Allow extending classes + tests [GH*257]</p></li>
+<li><p>Release June 11, 2015 [GH*259]</p></li>
+<li><p>Add M4 instances and Memcached port [GH*260]</p></li>
+<li><p>Add property for Subnet: MapPublicIpOnLaunch [GH*261]</p></li>
+<li><p>Minor improvements and fixes [GH*262]</p></li>
+<li><p>Update LoginProfile. Note: this is a breaking change and requires adding a
+<code class="docutils literal notranslate"><span class="pre">`Password=`</span></code> keyword parameter into LoginProfile. [GH*264]</p></li>
+<li><p>Add 2 additional properties (elasticache:CacheCluster:SnapshotName and opsworks:Layer:LifecycleEventConfiguration) [GH*265]</p></li>
+</ul>
+</div>
+<div class="section" id="id51">
+<h2>1.0.0 (2015*05*11)<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix two elasticache properties [GH*196]</p></li>
+<li><p>Add interim MinimumProtocolVersion to CloudFront ViewerCertificate [GH*218]</p></li>
+<li><p>Missing OriginPath in cloudfront.py [GH*220]</p></li>
+<li><p>Fix DBInstance constraints in order to allow the creation of RDS read*only replicas  [GH*221]</p></li>
+<li><p>Add properties CharacterSetName, KmsKeyId, and StorageEncrypted to AWS::RDS::DBInstance [GH*224]</p></li>
+<li><p>Add Route53 HostedZoneVPCs, HostedZoneTags, HealthCheckTags</p></li>
+<li><p>Add new properties from 2015*04*16 CloudFormation release [GH*225, GH*240]</p></li>
+<li><p>Allow default region for GetAZs() [GH*232]</p></li>
+<li><p>Make AvailabilityZones parameter optional in AutoScalingGroup</p></li>
+<li><p>EventSubscription resource + EC2 types [GH*227]</p></li>
+<li><p>Python 3.4 support [GH*228]</p></li>
+<li><p>examples fix: users is list [GH*237]</p></li>
+<li><p>SNS Topic fields are not required [GH*230]</p></li>
+<li><p>Make AvailabilityZones parameter optional in AutoScalingGroup [GH*236]</p></li>
+</ul>
+</div>
+<div class="section" id="id52">
+<h2>0.7.2 (2015*03*23)<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Support AWS helper functions in lists during validation [GH*179]</p></li>
+<li><p>Update README [GH*183]</p></li>
+<li><p>Fixing RedshiftClusterInVpc example; incorrect SG setup [GH*186]</p></li>
+<li><p>Add optional NonKeyAttributes to DynamoDB Projection class [GH*188]</p></li>
+<li><p>Change AutoScaling ScheduledAction StartTime, EndTime, and Recurrence to optional [GH*189]</p></li>
+<li><p>CloudFront forwarded values required on cache behavior [GH*191]</p></li>
+<li><p>DynamoDB attribute definitions required [GH*192]</p></li>
+<li><p>Add some ec2 required fields [GH*193]</p></li>
+<li><p>Fix ElasticBeanstalk resources [GH*213]</p></li>
+<li><p>Fix iam Policy Resource/Property bug [GH*214]</p></li>
+</ul>
+</div>
+<div class="section" id="id53">
+<h2>0.7.1 (2015*01*11)<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix UpdatePolicy validation [GH*173]</p></li>
+<li><p>Add AWS::CloudFormation::Init ConfigSets support [GH*176]</p></li>
+<li><p>Change CloudWatch Alarm’s Threshold prop to be basestring [GH*178]</p></li>
+</ul>
+</div>
+<div class="section" id="id54">
+<h2>0.7.0 (2015*01*02)<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Added new Google Group for discussion:
+<a class="reference external" href="https://groups.google.com/forum/#!forum/cloudtools*dev">https://groups.google.com/forum/#!forum/cloudtools*dev</a></p></li>
+<li><p>Fixing ValueError message to refer the correct package [GH*135]</p></li>
+<li><p>Change cfn to add <em>R</em> with no argument lists all the Stacks [GH*138]</p></li>
+<li><p>Add eu*central*1 region (Frankfurt) [GH*139]</p></li>
+<li><p>ConfigurationTemplate is an Object [GH*140]</p></li>
+<li><p>Release: AWS CloudFormation on 2014*11*06 [GH*141]</p></li>
+<li><p>Remove duplicate security_group from port [GH*143]</p></li>
+<li><p>UpdatePolicy and CreationPolicy [GH*144]</p></li>
+<li><p>Fixes duplicate key error reporting [GH*145]</p></li>
+<li><p>Fix warning in CloudFront example description [GH*148]</p></li>
+<li><p>Cfn script create bucket in the specified region [GH*149]</p></li>
+<li><p>Remove Unnecessary EOL whitespace [GH*150]
+Note: this changes the default JSON separators.</p></li>
+<li><p>More metadata options [GH*153]</p></li>
+<li><p>Metadata auth [GH*155]</p></li>
+<li><p>Fixed CreationPolicy [GH*157] [GH*160]</p></li>
+<li><p>Addded AWS template VPC_Single_Instance_In_Subnet example [GH*162]</p></li>
+<li><p>Add 2014*12*24 CloudFormation release changes [GH*167] [GH*168] [GH*169]</p></li>
+<li><p>Add GSI &amp; LSI Functionality [GH*161] [GH*172]</p></li>
+<li><p>Fixed landscape.io issues [GH*170]</p></li>
+</ul>
+</div>
+<div class="section" id="id55">
+<h2>0.6.2 (2014*10*09)<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Update to 2014*09*29 AWS release [GH*132]</p></li>
+<li><p>Add ElastiCache &amp; Port # Constants [GH*132]</p></li>
+<li><p>Add ELB Tag Support [GH*133]</p></li>
+<li><p>Fix DBSecurityGroupIngress required properties [GH*134]</p></li>
+</ul>
+</div>
+<div class="section" id="id56">
+<h2>0.6.1 (2014*09*28)<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Update InitConfig per AWS docs [GH*120]</p></li>
+<li><p>S3 improvement + essential constants [GH*125]</p></li>
+<li><p>Allow FindInMap() for ec2.NetworkInterfaceProperty.GroupSet [GH*128]</p></li>
+</ul>
+</div>
+<div class="section" id="id57">
+<h2>0.6.0 (2014*08*26)<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use subnet group for param, not vpc securitygroup [GH*65]</p></li>
+<li><p>Add support for Equals function and Condition [GH*66]</p></li>
+<li><p>Added ELB access logs and CrossZone test [GH*67]</p></li>
+<li><p>Added support for more condition functions [GH*69]</p></li>
+<li><p>Tweaked a few integer validation messages [GH*71]</p></li>
+<li><p>Fix resource.name backward compatibility regression</p></li>
+<li><p>Fix pep8 errors due to new pep8 1.5.x changes [GH*72]</p></li>
+<li><p>Allow Ref() in VPNGatewayRoutePropagation RouteTableIds list [GH*73]</p></li>
+<li><p>Add OpsWorks Support [GH*74]</p></li>
+<li><p>Add AutoScalingGroup TerminationPolicies [GH*77, GH*87]</p></li>
+<li><p>Add new property MetricsCollection [GH*79]</p></li>
+<li><p>Patching Users class to use basestring or Ref type for Groups [GH*80]</p></li>
+<li><p>Added support for Kinesis [GH*81]</p></li>
+<li><p>Allow autoscaling group to support ‘min instances in service’ and ‘max size’ values that are Refs [GH*82]</p></li>
+<li><p>Added support for Redshift [GH*84]</p></li>
+<li><p>Add DestinationSecurityGroupId in ec2.SecurityGroupRule [GH*85]</p></li>
+<li><p>Add CloudFront CacheBehavior [GH*86]</p></li>
+<li><p>Tweak UpdatePolicy properties [GH*88]</p></li>
+<li><p>Tweaks to rds.DNInstance [GH*89]</p></li>
+<li><p>Tweaks to EC2 DeviceIndex property values [GH*90]</p></li>
+<li><p>Fix AutoScalingGroup MinSize MaxSize [ GH*92]</p></li>
+<li><p>Add Encrypted option to AWS::EC2::Volume [GH*96]</p></li>
+<li><p>Add missing config to s3.Bucket [GH*97]</p></li>
+<li><p>Add CloudFront DistributionConfig, CacheBehavior and DefaultCacheBehavior [GH*98]</p></li>
+<li><p>Add EC2 Instance InstanceInitiatedShutdownBehavior [GH*99]</p></li>
+<li><p>Updating the block device options for AutoScalingGroups [GH*100]</p></li>
+<li><p>Added support for AWS::CloudFormation::Init in AutoScalingGroup [GH*101]</p></li>
+<li><p>Added VPCPeering class [GH*102]</p></li>
+<li><p>Opworks CustomJson property expects a JSON object not a string [GH*103]</p></li>
+<li><p>Add support for VersioningConfiguration on S3 buckets [GH*104]</p></li>
+<li><p>Added Logs resource type [GH*105]</p></li>
+<li><p>Add PlacementGroup param to AutoScalingGroup [GH*111]</p></li>
+<li><p>Add VpcPeeringConnectionId parameter to EC2 Route [GH*113]</p></li>
+<li><p>Make RDS DBInstance MasterUsername and MasterPassword optional [GH*116]</p></li>
+<li><p>Add CloudTrail, tweaks to CloudWatch Alarm, and support route53 AliasTarger EvaluateTargetHealth [GH*117]</p></li>
+<li><p>Add LogDeliveryWrite canned ACL for S3 bucket [GH*118]</p></li>
+</ul>
+</div>
+<div class="section" id="id58">
+<h2>0.5.0 (2014*03*21)<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add OpenStack native types [GH*61]</p></li>
+<li><p>Make <cite>integer()</cite> validator work with any integer*like object [GH*57]</p></li>
+<li><p>Add support to ELB ConnectionDrainingPolicy [GH*62]</p></li>
+<li><p>Add more OpenStack resource types and validation [GH*63]</p></li>
+</ul>
+</div>
+<div class="section" id="id59">
+<h2>0.4.0 (2014*02*19)<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Allow to extend resource classes by adding custom attributes [GH*16]</p></li>
+<li><p>Add AWS::ElastiCache::SubnetGroup [GH*27]</p></li>
+<li><p>Fix examples/VPC_EC2_Instance_With_Multiple_Dynamic_IPAddresses.py [GH*29]</p></li>
+<li><p>CacheSecurityGroupNames not required if using VpcSecurityGroupIds [GH*31]</p></li>
+<li><p>Add VPNConnectionRoute object and attribute to VPNConnection [GH*33]</p></li>
+<li><p>add new CrossZone option to ELB [GH*34]</p></li>
+<li><p>Add VPC_With_VPN_Connection example</p></li>
+<li><p>Fixup some of the network related validators and pep8 changes</p></li>
+<li><p>Add support for Tags and PortRange</p></li>
+<li><p>Add more resource name properties per CloudFormation release 2013*12*19</p></li>
+<li><p>Add Tier Environment property per CloudFormation release 2013*12*19</p></li>
+<li><p>Add VPNGatewayRoutePropagation per CloudFormation release 2013*11*22</p></li>
+<li><p>Add Tags properties  per CloudFormation release 2013*09*24</p></li>
+<li><p>Add network changes from CloudFormation release 2013*09*17</p></li>
+<li><p>Canonicalize integer and bool values for more consistent output [GH*35]</p></li>
+<li><p>Add travis*ci for automated testing [GH*38]</p></li>
+<li><p>Check output of examples in test_examples [GH*40]</p></li>
+<li><p>Add support for conditions and for Fn::If() [GH*41]</p></li>
+<li><p>Tweak ELB ranges to match ec2 console [GH*43]</p></li>
+<li><p>Handle bool values better in cfn2py [GH*45]</p></li>
+<li><p>Allow strings (as well as Refs) for Subnet VpcId [GH*47]</p></li>
+<li><p>Add InstanceID to AutoScalingGroup and LaunchConfiguration</p></li>
+<li><p>ec2.DHCPOptions NTPservers -&gt; NtpServers [GH*54]</p></li>
+<li><p>Add SQS dead letter queue from CloudFormation release 2014*01*29</p></li>
+<li><p>Add AutoScaling ScheduledAction from release 2014*01*27</p></li>
+<li><p>Add Tags for SecurityGroups [GH*55]</p></li>
+<li><p>RecordSets in Route53 not formatted correctly [GH*51]</p></li>
+<li><p>Allow Ref() in NetworkInterfaceProperty GroupSet list [GH*56]</p></li>
+</ul>
+</div>
+<div class="section" id="id60">
+<h2>0.3.4 (2013*12*05)<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Adding separators options to print to json function [GH*19]</p></li>
+<li><p>Add cfn2py script to convert json templates to Python [GH*22]</p></li>
+<li><p>Add EnableDnsSupport and EnableDnsHostnames properties for VPC [GH*23]</p></li>
+<li><p>Add VPC support to elasticache [GH*24]</p></li>
+<li><p>Fix missing Import Ref [GH*26]</p></li>
+<li><p>Add missing AWS::SQS::Queue properties</p></li>
+<li><p>Add resource naming (Name Type)</p></li>
+<li><p>Allow Ref’s in the list objects</p></li>
+</ul>
+</div>
+<div class="section" id="id61">
+<h2>0.3.3 (2013*10*04)<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fix Ref() to output the name only [GH*17]</p></li>
+<li><p>Add Ref test.</p></li>
+<li><p>Fix some IAM issues</p></li>
+</ul>
+</div>
+<div class="section" id="id62">
+<h2>0.3.2 (2013*09*25)<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Convert VPCDHCPOptionsAssociation to not have __init__</p></li>
+<li><p>Fix Output, Parameter and UpdatePolicy to not output a Properties dict</p></li>
+<li><p>Raise a ValueError if adding a duplicate object to the template</p></li>
+<li><p>Set the correct dictname for UpdatePolicy</p></li>
+</ul>
+</div>
+<div class="section" id="id63">
+<h2>0.3.1 (2013*09024)<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Make the code more DRY [GH*15]</p></li>
+<li><p>Add a optional <cite>name</cite> argument to AWSProperty constructor</p></li>
+<li><p>Add ability to push large stack templates to S3</p></li>
+<li><p>InstanceType is not required (defaults to m1.small)</p></li>
+<li><p>Add AssociatePublicIpAddress property for AutoScaling LaunchConfiguration</p></li>
+<li><p>Make Tags an AWSHelperFn to make it easier to assign</p></li>
+<li><p>Resource property types should not be in a Properties dictionary</p></li>
+<li><p>Clean up “required” error checking and handle property types better</p></li>
+</ul>
+</div>
+<div class="section" id="id64">
+<h2>0.3.0 (2013*08*07)<a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Do not validate AWSHelperFun’s [GH*8] [GH*9]</p></li>
+<li><p>Add missing return in integer_range [GH*10]</p></li>
+<li><p>integer_range validator for ELB HealthyCheckInt</p></li>
+<li><p>Convert RDS::DBInstance::VPCSecurityGroups to new list type checking</p></li>
+<li><p>VPCSecurityGroups for RDS should be a list, not a basestring</p></li>
+</ul>
+</div>
+<div class="section" id="id65">
+<h2>0.2.9 (2013*05*07)<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fixing ELB LoadBalancerPorts not required (error in the AWS docs)</p></li>
+</ul>
+</div>
+<div class="section" id="id66">
+<h2>0.2.8 (2013*04*24)<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>EC2 SecurityGroup Egress &amp; Ingress rules should be objects</p></li>
+<li><p>Fix Attributes validator for ELB Policies</p></li>
+<li><p>Allow PolicyDocuments to use (if present) awacs Policy objects</p></li>
+<li><p>Add test for matching against a tuple of types</p></li>
+</ul>
+</div>
+<div class="section" id="id67">
+<h2>0.2.6 (2013*03*26)<a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add cfn script to create, tail and show stack resources</p></li>
+</ul>
+</div>
+<div class="section" id="id68">
+<h2>0.2.5 (2013*03*25)<a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>UpdatePolicy validation enhancements [GH*5]</p></li>
+<li><p>Add VPCSecurityGroups property to AWS::RDS::DBInstance</p></li>
+<li><p>DefaultCacheBehavior is a required property for DistributionConfig</p></li>
+<li><p>Fix CustomGateway -&gt; CustomerGateway</p></li>
+<li><p>Domain does not have any properties</p></li>
+<li><p>Fix VPC security group rule bugs</p></li>
+<li><p>Added EBSBlockDevice and BlockDeviceMapping classes.</p></li>
+<li><p>Add a post*validator to allow individual object to validate themselves</p></li>
+<li><p>Add ability to use validate functions on property values</p></li>
+<li><p>Add validation of list element types</p></li>
+<li><p>Add unit tests</p></li>
+</ul>
+</div>
+<div class="section" id="id69">
+<h2>0.2.0 (2013*02*26)<a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Add support for autoscaling notification configurations [GH*2]</p></li>
+<li><p>Add support for AWS::ElastiCache and AWS::RDS</p></li>
+<li><p>Move to AWSProperty entirely.</p></li>
+<li><p>Add shortcuts for the NotificationTypes strings</p></li>
+<li><p>Add Python 3.x compatibility support</p></li>
+<li><p>Pass pep8 and pyflakes</p></li>
+</ul>
+</div>
+<div class="section" id="id70">
+<h2>0.1.2 (2013*02*21)<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>First PyPI release</p></li>
+<li><p>Add S3 bucket support [GH*1]</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contribute.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="apis/tests.html" class="btn btn-neutral float-left" title="tests package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, cloudtools
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
