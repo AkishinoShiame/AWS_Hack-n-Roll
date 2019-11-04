@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing &mdash; troposphere 2.4.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/troposphere_favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Code of Conduct" href="code_of_conduct.html" />
+    <link rel="prev" title="Changelog" href="changelog.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/troposphere_logo_small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis/examples_toc.html">examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis/troposphere_toc.html">troposphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis/tests_toc.html">tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tl-dr">tl;dr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-get-help">How to Get Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-test-your-code">How to Test Your Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributing-example-code">Contributing Example Code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#releasing">Releasing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#steps-to-release-a-new-version">Steps to release a new version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#helper-to-create-changelog-entries">Helper to create CHANGELOG entries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#helper-to-list-supported-resources">Helper to list supported resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">troposphere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tl-dr">
+<h2>tl;dr<a class="headerlink" href="#tl-dr" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Fork <a class="reference external" href="https://github.com/cloudtools/troposphere">https://github.com/cloudtools/troposphere</a></p></li>
+<li><p>Make the code better</p></li>
+<li><p>Make the code pass tests</p></li>
+<li><p>Create a Pull Request</p></li>
+</ol>
+</div>
+<div class="section" id="how-to-get-help">
+<h2>How to Get Help<a class="headerlink" href="#how-to-get-help" title="Permalink to this headline">¶</a></h2>
+<p>We have a Google Group, <a class="reference external" href="https://groups.google.com/forum/#!forum/cloudtools-dev">cloudtools-dev</a>, where you can ask questions and
+engage with the troposphere community. Issues and pull requests are always
+welcome!</p>
+</div>
+<div class="section" id="how-to-test-your-code">
+<h2>How to Test Your Code<a class="headerlink" href="#how-to-test-your-code" title="Permalink to this headline">¶</a></h2>
+<p>The latest test scripts can be found at <a class="reference external" href="https://travis-ci.org/cloudtools/troposphere">Travis-CI</a>.
+If you look at the details of a job, you can see what automated tests
+will be run against any commits to the project.</p>
+<ol class="arabic simple">
+<li><p>Create a virtualenv (e.g. <cite>virtualenv ~/virtualenv/troposphere</cite>)</p></li>
+<li><p>Activate it: <cite>source ~/virtualenv/troposphere/bin/activate</cite></p></li>
+<li><p><cite>pip install –upgrade pip setuptools wheel</cite></p></li>
+<li><p><cite>pip install -r requirements-dev.txt</cite></p></li>
+<li><dl class="simple">
+<dt>Run tests</dt><dd><ol class="arabic simple">
+<li><p><cite>pycodestyle .</cite></p></li>
+<li><p><cite>pyflakes .</cite></p></li>
+<li><p><cite>python setup.py test</cite></p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Alternatively, make can be used to run the tests, i.e. <cite>make test</cite>.</p></li>
+</ol>
+<p>Tests are run against Python 2.7, 3.5, and 3.6.</p>
+</div>
+<div class="section" id="contributing-example-code">
+<h2>Contributing Example Code<a class="headerlink" href="#contributing-example-code" title="Permalink to this headline">¶</a></h2>
+<p>New example code should go into <cite>troposphere/examples</cite>. The expected
+CloudFormation Template should be stored in <cite>troposphere/tests/examples_output/</cite>.
+When tests are run the output of the code in the examples directory will
+be compared with the expected results in the <cite>example_output</cite> directory.</p>
+</div>
+</div>
+<div class="section" id="releasing">
+<h1>Releasing<a class="headerlink" href="#releasing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="steps-to-release-a-new-version">
+<h2>Steps to release a new version<a class="headerlink" href="#steps-to-release-a-new-version" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Change version in troposphere/__init__.py</p></li>
+<li><p>Update CHANGELOG.md with changes made since last release</p></li>
+<li><p>Verify release installs on Python2 and Python 3: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">release-test</span></code></p></li>
+<li><p>Create a signed tag: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">--sign</span> <span class="pre">-m</span> <span class="pre">&quot;Release</span> <span class="pre">1.1.1&quot;</span> <span class="pre">1.1.1</span></code></p></li>
+<li><p>Create PyPI release: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">sdist</span> <span class="pre">upload</span> <span class="pre">--sign</span></code></p></li>
+<li><p>Push commits: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
+<li><p>Push tag: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code></p></li>
+<li><p>Update github release page: <a class="reference external" href="https://github.com/cloudtools/troposphere/releases">https://github.com/cloudtools/troposphere/releases</a></p></li>
+</ul>
+</div>
+<div class="section" id="helper-to-create-changelog-entries">
+<h2>Helper to create CHANGELOG entries<a class="headerlink" href="#helper-to-create-changelog-entries" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">--reverse</span> <span class="pre">--pretty=format:&quot;%s&quot;</span> <span class="pre">|</span> <span class="pre">tail</span> <span class="pre">-100</span> <span class="pre">|</span> <span class="pre">sed</span> <span class="pre">'s/^/*</span> <span class="pre">/'</span></code></p>
+</div>
+<div class="section" id="helper-to-list-supported-resources">
+<h2>Helper to list supported resources<a class="headerlink" href="#helper-to-list-supported-resources" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">-h</span> <span class="pre">'resource_type</span> <span class="pre">=</span> <span class="pre">&quot;AWS::'</span> <span class="pre">troposphere/*</span> <span class="pre">|</span> <span class="pre">sed</span> <span class="pre">'s/[</span> <span class="pre">]*resource_type</span> <span class="pre">=</span> <span class="pre">&quot;'//</span> <span class="pre">|</span> <span class="pre">cut</span> <span class="pre">-f1-3</span> <span class="pre">-d:</span> <span class="pre">|</span> <span class="pre">sort</span> <span class="pre">|</span> <span class="pre">uniq</span> <span class="pre">|</span> <span class="pre">sed</span> <span class="pre">'s/^/-</span> <span class="pre">/'</span></code></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="code_of_conduct.html" class="btn btn-neutral float-right" title="Code of Conduct" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="changelog.html" class="btn btn-neutral float-left" title="Changelog" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, cloudtools
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

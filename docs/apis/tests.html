@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tests package &mdash; troposphere 2.4.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/troposphere_favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Changelog" href="../changelog.html" />
+    <link rel="prev" title="tests" href="tests_toc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/troposphere_logo_small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples_toc.html">examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troposphere_toc.html">troposphere</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tests_toc.html">tests</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">tests package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-apigateway-module">tests.test_apigateway module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-apigatewayv2-module">tests.test_apigatewayv2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-appsync-module">tests.test_appsync module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-asg-module">tests.test_asg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-awslambda-module">tests.test_awslambda module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-basic-module">tests.test_basic module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-cloudformation-module">tests.test_cloudformation module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-cloudwatch-module">tests.test_cloudwatch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-codebuild-module">tests.test_codebuild module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-codecommit-module">tests.test_codecommit module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-config-module">tests.test_config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-dict-module">tests.test_dict module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-ec2-module">tests.test_ec2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-ecs-module">tests.test_ecs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-efs-module">tests.test_efs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-elasticloadbalancerv2-module">tests.test_elasticloadbalancerv2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-emr-module">tests.test_emr module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tests.test_examples">tests.test_examples module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-examples-template-generator-module">tests.test_examples_template_generator module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-guardduty-module">tests.test_guardduty module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-int-type-module">tests.test_int_type module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-iot1click-module">tests.test_iot1click module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-logs-module">tests.test_logs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-opsworks-module">tests.test_opsworks module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-parameters-module">tests.test_parameters module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-policies-module">tests.test_policies module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-rds-module">tests.test_rds module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-s3-module">tests.test_s3 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-serverless-module">tests.test_serverless module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-sqs-module">tests.test_sqs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-stepfunctions-module">tests.test_stepfunctions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-tags-module">tests.test_tags module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-template-module">tests.test_template module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-template-generator-module">tests.test_template_generator module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-userdata-module">tests.test_userdata module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-validators-module">tests.test_validators module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-test-yaml-module">tests.test_yaml module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html#releasing">Releasing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code_of_conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">troposphere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="tests_toc.html">tests</a> &raquo;</li>
+        
+      <li>tests package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tests-package">
+<h1>tests package<a class="headerlink" href="#tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-apigateway-module">
+<h2>tests.test_apigateway module<a class="headerlink" href="#tests-test-apigateway-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-apigatewayv2-module">
+<h2>tests.test_apigatewayv2 module<a class="headerlink" href="#tests-test-apigatewayv2-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-appsync-module">
+<h2>tests.test_appsync module<a class="headerlink" href="#tests-test-appsync-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-asg-module">
+<h2>tests.test_asg module<a class="headerlink" href="#tests-test-asg-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-awslambda-module">
+<h2>tests.test_awslambda module<a class="headerlink" href="#tests-test-awslambda-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-basic-module">
+<h2>tests.test_basic module<a class="headerlink" href="#tests-test-basic-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-cloudformation-module">
+<h2>tests.test_cloudformation module<a class="headerlink" href="#tests-test-cloudformation-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-cloudwatch-module">
+<h2>tests.test_cloudwatch module<a class="headerlink" href="#tests-test-cloudwatch-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-codebuild-module">
+<h2>tests.test_codebuild module<a class="headerlink" href="#tests-test-codebuild-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-codecommit-module">
+<h2>tests.test_codecommit module<a class="headerlink" href="#tests-test-codecommit-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-config-module">
+<h2>tests.test_config module<a class="headerlink" href="#tests-test-config-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-dict-module">
+<h2>tests.test_dict module<a class="headerlink" href="#tests-test-dict-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-ec2-module">
+<h2>tests.test_ec2 module<a class="headerlink" href="#tests-test-ec2-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-ecs-module">
+<h2>tests.test_ecs module<a class="headerlink" href="#tests-test-ecs-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-efs-module">
+<h2>tests.test_efs module<a class="headerlink" href="#tests-test-efs-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-elasticloadbalancerv2-module">
+<h2>tests.test_elasticloadbalancerv2 module<a class="headerlink" href="#tests-test-elasticloadbalancerv2-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-emr-module">
+<h2>tests.test_emr module<a class="headerlink" href="#tests-test-emr-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tests.test_examples">
+<span id="tests-test-examples-module"></span><h2>tests.test_examples module<a class="headerlink" href="#module-tests.test_examples" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tests.test_examples.TestExamples">
+<em class="property">class </em><code class="sig-prename descclassname">tests.test_examples.</code><code class="sig-name descname">TestExamples</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tests/test_examples.html#TestExamples"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tests.test_examples.TestExamples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="attribute">
+<dt id="tests.test_examples.TestExamples.expected_output">
+<code class="sig-name descname">expected_output</code><em class="property"> = None</em><a class="headerlink" href="#tests.test_examples.TestExamples.expected_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="tests.test_examples.TestExamples.filename">
+<code class="sig-name descname">filename</code><em class="property"> = None</em><a class="headerlink" href="#tests.test_examples.TestExamples.filename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="tests.test_examples.TestExamples.maxDiff">
+<code class="sig-name descname">maxDiff</code><em class="property"> = None</em><a class="headerlink" href="#tests.test_examples.TestExamples.maxDiff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tests.test_examples.TestExamples.test_example">
+<code class="sig-name descname">test_example</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tests/test_examples.html#TestExamples.test_example"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tests.test_examples.TestExamples.test_example" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="tests.test_examples.create_test_class">
+<code class="sig-prename descclassname">tests.test_examples.</code><code class="sig-name descname">create_test_class</code><span class="sig-paren">(</span><em class="sig-param">testname</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tests/test_examples.html#create_test_class"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tests.test_examples.create_test_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tests.test_examples.load_tests">
+<code class="sig-prename descclassname">tests.test_examples.</code><code class="sig-name descname">load_tests</code><span class="sig-paren">(</span><em class="sig-param">loader</em>, <em class="sig-param">tests</em>, <em class="sig-param">pattern</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tests/test_examples.html#load_tests"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#tests.test_examples.load_tests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="tests-test-examples-template-generator-module">
+<h2>tests.test_examples_template_generator module<a class="headerlink" href="#tests-test-examples-template-generator-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-guardduty-module">
+<h2>tests.test_guardduty module<a class="headerlink" href="#tests-test-guardduty-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-int-type-module">
+<h2>tests.test_int_type module<a class="headerlink" href="#tests-test-int-type-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-iot1click-module">
+<h2>tests.test_iot1click module<a class="headerlink" href="#tests-test-iot1click-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-logs-module">
+<h2>tests.test_logs module<a class="headerlink" href="#tests-test-logs-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-opsworks-module">
+<h2>tests.test_opsworks module<a class="headerlink" href="#tests-test-opsworks-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-parameters-module">
+<h2>tests.test_parameters module<a class="headerlink" href="#tests-test-parameters-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-policies-module">
+<h2>tests.test_policies module<a class="headerlink" href="#tests-test-policies-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-rds-module">
+<h2>tests.test_rds module<a class="headerlink" href="#tests-test-rds-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-s3-module">
+<h2>tests.test_s3 module<a class="headerlink" href="#tests-test-s3-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-serverless-module">
+<h2>tests.test_serverless module<a class="headerlink" href="#tests-test-serverless-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-sqs-module">
+<h2>tests.test_sqs module<a class="headerlink" href="#tests-test-sqs-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-stepfunctions-module">
+<h2>tests.test_stepfunctions module<a class="headerlink" href="#tests-test-stepfunctions-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-tags-module">
+<h2>tests.test_tags module<a class="headerlink" href="#tests-test-tags-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-template-module">
+<h2>tests.test_template module<a class="headerlink" href="#tests-test-template-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-template-generator-module">
+<h2>tests.test_template_generator module<a class="headerlink" href="#tests-test-template-generator-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-userdata-module">
+<h2>tests.test_userdata module<a class="headerlink" href="#tests-test-userdata-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-validators-module">
+<h2>tests.test_validators module<a class="headerlink" href="#tests-test-validators-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tests-test-yaml-module">
+<h2>tests.test_yaml module<a class="headerlink" href="#tests-test-yaml-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tests_toc.html" class="btn btn-neutral float-left" title="tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, cloudtools
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
