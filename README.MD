@@ -277,6 +277,6 @@ Bind and Bound out the bordering / Mark down the Limition:
   
 # Reference  
   
-[Using troposphere Manual](https://akishinoshiame.github.io/AWS_Hack-n-Roll/index.html)  
+[Using troposphere Manual](https://akishinoshiame.github.io/AWS_Hack-n-Roll/)  
   
 &copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  
