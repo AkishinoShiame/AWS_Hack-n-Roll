@@ -13,3 +13,6 @@
 [submodule "troposphere"]
 	path = troposphere
 	url = https://github.com/cloudtools/troposphere.git
+[submodule "eks-workshop"]
+	path = eks-workshop
+	url = https://github.com/Taipei-HUG/eks-workshop.git
