@@ -3,6 +3,8 @@
 * Content
   * [WorkShop-1](#workshop-1-aws-cdk--aws-cloudformation)
   * [WorkShop-2](#workshop-2-domain-driven-design)
+  * [WorkShop-3](#workshop-3-hashicorp-community﻿)
+  * [Reference](#Reference)
 
 # [WorkShop-1] AWS CDK + AWS CloudFormation
   
@@ -270,5 +272,11 @@ Bind and Bound out the bordering / Mark down the Limition:
   
 * ANTICORRUPTION LAYER
  * Define a "GOOGLE Translator"-like API to check 3-Party API schema.
+  
+# [WorkShop-3] Hashicorp Community﻿  
+  
+# Reference  
+  
+[Using troposphere Manual](https://akishinoshiame.github.io/AWS_Hack-n-Roll/)  
   
 &copy; CopyWrite on this project by Shiame. All Rights reserved. (CC)  

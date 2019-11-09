@@ -13,6 +13,12 @@
 [submodule "troposphere"]
 	path = troposphere
 	url = https://github.com/cloudtools/troposphere.git
+<<<<<<< HEAD
 [submodule "eks-workshop"]
 	path = eks-workshop
 	url = https://github.com/Taipei-HUG/eks-workshop.git
+=======
+[submodule "OpenFreePay"]
+	path = OpenFreePay
+	url = https://github.com/AkishinoShiame/OpenFreePay.git
+>>>>>>> 7aef3fa8f98185507b450471ce476f24cfc9f44f
