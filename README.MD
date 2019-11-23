@@ -275,7 +275,7 @@ Bind and Bound out the bordering / Mark down the Limition:
   
 # [WorkShop-3] Hashicorp Community  
   
-[Hack 'n' Roll_ Kubernetes from Zero to Hero](./Hack 'n' Roll_ Kubernetes from Zero to Hero.pdf)
+[Hack 'n' Roll_ Kubernetes from Zero to Hero](Hack%20'n'%20Roll_%20Kubernetes%20from%20Zero%20to%20Hero.pdf)
   
 # Reference  
   
