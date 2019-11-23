@@ -273,7 +273,9 @@ Bind and Bound out the bordering / Mark down the Limition:
 * ANTICORRUPTION LAYER
  * Define a "GOOGLE Translator"-like API to check 3-Party API schema.
   
-# [WorkShop-3] Hashicorp Community﻿  
+# [WorkShop-3] Hashicorp Community  
+  
+![Hack 'n' Roll_ Kubernetes from Zero to Hero](./Hack 'n' Roll_ Kubernetes from Zero to Hero.pdf)
   
 # Reference  
   
